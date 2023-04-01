@@ -3,7 +3,21 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент главной страницы
+<main class="main">
+	<h1 class="visually-hidden">
+		Кэт Энерджи - программы питания для котов
+	</h1>
+	<section class="hero">
+		<h2 class="hero__title">
+			Функциональное<br>питание для котов
+		</h2>
+		<p class="hero__slogan">
+			Занялся собой? Займись котом!
+		</p>
+		<img class="hero__img" src="#" alt="Питание Кэт Энерджи со вкусом курицы">
+		<a class="hero__button button" href="#">
+			подобрать программу
+		</a>
+	</section>
 </main>
 {% endblock %}
