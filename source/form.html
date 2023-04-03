@@ -3,7 +3,116 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент страницы формы
+<main class="main">
+	<h1 class="page-title">
+		Подбор программы
+	</h1>
+	<section class="page-form">
+		<form class="form" action="https://echo.htmlacademy.ru/" method="post">
+			<h2 class="form__title">
+				Заполните анкету, и мы подберем программу питания для вашего кота
+			</h2>
+			<fieldset class="cat-information">
+				<legend class="visually-hidden">
+					Заполните имя, вес и возраст домашнего питомца
+				</legend>
+				<label class="cat-information__cat-name" for="cat-name">
+					ИМЯ:*
+				</label>
+				<input class="cat-information__cat-name-input field" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
+				<label class="cat-information__cat-weight" for="cat-weight">
+					Вес (кг):*
+				</label>
+				<input class="cat-information__cat-weight-input field" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+				<label class="cat-information__cat-age" for="cat-age">
+					Возраст (лет):
+				</label>
+				<input class="cat-information__cat-age-input field" type="number" id="cat-age" name="cat-age" placeholder="7">
+			</fieldset>
+			<fieldset class="nutrition-program">
+				<legend class="visually-hidden">
+					Выберите программу питания
+				</legend>
+				<ul class="nutrition-program__list">
+					<li class="nutrition-program__item">
+						<input class="nutrition-program__wight-loss-input" type="radio" id="weight-loss" name="nutrition-program" value="weight-loss" checked>
+						<label class="nutrition-program__weight-loss" for="weight-loss">
+							Похудение
+						</label>
+					</li>
+					<li class="nutrition-program__item">
+						<input class="nutrition-program__mass-gain" type="radio" id="mass-gain" name="nutrition-program" value="mass-gain">
+						<label class="nutrition-program__mass-gain" for="mass-gain">
+							Набор массы
+						</label>
+					</li>
+					<li class="nutrition-program__item">
+						<input class="nutrition-program__advise-input" type="radio" id="advise" name="nutrition-program" value="need-advise">
+						<label class="nutrition-program__advise" for="advise">
+							Не знаю (Нужен ваш совет)
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="owner">
+				<legend class="owner__title">
+					Контактные данные (владельца кота)
+				</legend>
+				<label class="owner__email" for="owner-email">
+					E-mail:*
+				</label>
+				<input class="owner__email-input" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+				<label for="owner__tel">
+					Телефон:*
+				</label>
+				<input class="owner__tel-input" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+			</fieldset>
+			<fieldset class="comment">
+				 <legend class="comment__title">
+					Комментарий
+				 </legend>
+				 <textarea class="comment__text" name="comment" id="" cols="30" rows="8">
+					Расскажите обо всех повадках кота
+				 </textarea>
+			</fieldset>
+			<fieldset class="additional">
+				<legend class="additional__title">
+					Дополнительно
+				</legend>
+				<ul class="additional__list">
+					<li class="additional__item">
+						<input class="additional__sweetener-input" type="checkbox" id="sweetener" name="sweetener" checked>
+						<label class="additional__sweetener" for="sweetener">
+							сахарозаменитель
+						</label>
+					</li>
+					<li class="additional__item">
+						<input class="additional__water-input" type="checkbox" id="water" name="water">
+						<label class="additional__water" for="water">
+							питьевая вода
+						</label>
+					</li>
+					<li class="additional__item">
+						<input class="additional__milk-input" type="checkbox" id="milk" name="milk">
+						<label class="additional__milk" for="milk">
+							молоко
+						</label>
+					</li>
+					<li class="additional__item">
+						<input class="additional__vitamins-input" type="checkbox" id="vitamins" name="vitamins">
+						<label class="additional__vitamins" for="vitamins">
+							витамины
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<button class="form__button" type="submit">
+				отправить заявку
+			</button>
+			<small class="form__comment">
+				* — Обязательные поля
+			</small>
+		</form>
+	</section>
 </main>
 {% endblock %}
