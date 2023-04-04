@@ -17,11 +17,11 @@
 					Заполните имя, вес и возраст домашнего питомца
 				</legend>
 				<label class="cat-information__cat-name" for="cat-name">
-					ИМЯ:*
+					Имя:<span aria-hidden="true">*</span>
 				</label>
 				<input class="cat-information__cat-name-input field" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
 				<label class="cat-information__cat-weight" for="cat-weight">
-					Вес (кг):*
+					Вес (кг):<span aria-hidden="true">*</span>
 				</label>
 				<input class="cat-information__cat-weight-input field" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
 				<label class="cat-information__cat-age" for="cat-age">
@@ -59,67 +59,65 @@
 					Контактные данные (владельца кота)
 				</legend>
 				<label class="owner__email" for="owner-email">
-					E-mail:*
+					E-mail:<span aria-hidden="true">*</span>
 				</label>
 				<input class="owner__email-input" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
-				<label for="owner__tel">
-					Телефон:*
+				<label for="owner-tel">
+					Телефон: <span aria-hidden="true">*</span>
 				</label>
 				<input class="owner__tel-input" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
 			</fieldset>
-			<fieldset class="comment">
-				 <legend class="comment__title">
+			<div class="comment">
+				<label class="comment__title" for="comment">
 					Комментарий
-				 </legend>
-				 <textarea class="comment__text" name="comment" id="" cols="30" rows="8">
-					Расскажите обо всех повадках кота
-				 </textarea>
-			</fieldset>
+				</label>
+				<textarea class="comment__text" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+			</div>
 			<fieldset class="additional">
 				<legend class="additional__title">
 					Дополнительно
 				</legend>
 				<ul class="additional__list">
 					<li class="additional__item">
-						<input class="additional__sweetener-input" type="checkbox" id="sweetener" name="sweetener" checked>
+						<input class="additional__sweetener-input" type="checkbox" id="sweetener" name="additiona-products" value="sweetener" checked>
 						<label class="additional__sweetener" for="sweetener">
-							сахарозаменитель
+							Сахарозаменитель
 						</label>
 					</li>
 					<li class="additional__item">
-						<input class="additional__water-input" type="checkbox" id="water" name="water">
+						<input class="additional__water-input" type="checkbox" id="water" name="additiona-products" value="water">
 						<label class="additional__water" for="water">
-							питьевая вода
+							Питьевая вода
 						</label>
 					</li>
 					<li class="additional__item">
-						<input class="additional__milk-input" type="checkbox" id="milk" name="milk">
+						<input class="additional__milk-input" type="checkbox" id="milk" name="additiona-products" value="milk">
 						<label class="additional__milk" for="milk">
-							молоко
+							Молоко
 						</label>
 					</li>
 					<li class="additional__item">
-						<input class="additional__vitamins-input" type="checkbox" id="vitamins" name="vitamins">
+						<input class="additional__vitamins-input" type="checkbox" id="vitamins" name="additiona-products" value="vitamins">
 						<label class="additional__vitamins" for="vitamins">
-							витамины
+							Витамины
 						</label>
 					</li>
 				</ul>
 			</fieldset>
 			<button class="form__button" type="submit">
-				отправить заявку
+				Отправить заявку
 			</button>
-			<small class="form__comment">
+			<small class="form__comment" aria-hidden="true">
 				* — Обязательные поля
 			</small>
 		</form>
 	</section>
 	<section class="address">
 		<h2 class="address__title">
-			приглашаем к сотрудничеству дилеров!
+			Приглашаем к сотрудничеству дилеров!
 		</h2>
 		<address class="address__number">
-			ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+			Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
 		</address>
 		<div class="address__map">
 			<img class="address__map-image" src="#" alt="Карта">
