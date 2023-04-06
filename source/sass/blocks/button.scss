@@ -1,0 +1,13 @@
+.button {
+	font-family: var(--accent-font);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
+
+	&--primary {
+		background-color: var(--accent-color);
+	}
+}

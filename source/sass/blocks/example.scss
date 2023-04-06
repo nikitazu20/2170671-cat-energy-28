@@ -1,0 +1,17 @@
+.example {
+	background-color: #eaeaea;
+}
+
+.example__number {
+	font-family: var(--accent-font);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 24px;
+	color: #000000;
+	line-height: 24px;
+}
+
+.example__item-description {
+	font-size: 12px;
+	line-height: 12px;
+}
