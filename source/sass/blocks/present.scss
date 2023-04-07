@@ -1,5 +1,22 @@
+.present {
+	position: relative;
+	min-height: 290px;
+
+	&::after {
+		content: "";
+		background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), url("/img/catalog-background-mobile.jpg") no-repeat;
+		position: absolute;
+		min-width: 280px;
+		height: 290px;
+		top: 0;
+		left: 0;
+	}
+}
+
 .present__description {
 	font-size: 16px;
 	line-height: 20px;
 	color: #ffffff;
+	position: relative;
+	z-index: 1;
 }
