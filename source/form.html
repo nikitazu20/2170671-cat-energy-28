@@ -16,15 +16,15 @@
 				<legend class="visually-hidden">
 					Заполните имя, вес и возраст домашнего питомца
 				</legend>
-				<label class="cat-information__cat-name" for="cat-name">
+				<label class="cat-information__cat-name cat-information-label" for="cat-name">
 					Имя:<span aria-hidden="true">*</span>
 				</label>
-				<input class="cat-information__cat-name-input" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
-				<label class="cat-information__cat-weight" for="cat-weight">
+				<input class="cat-information__cat-name-input field" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
+				<label class="cat-information__cat-weight cat-information-label" for="cat-weight">
 					Вес (кг):<span aria-hidden="true">*</span>
 				</label>
 				<input class="cat-information__cat-weight-input field" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
-				<label class="cat-information__cat-age" for="cat-age">
+				<label class="cat-information__cat-age cat-information-label" for="cat-age">
 					Возраст (лет):
 				</label>
 				<input class="cat-information__cat-age-input field" type="number" id="cat-age" name="cat-age" placeholder="7">
@@ -36,75 +36,75 @@
 				<ul class="nutrition-program__list">
 					<li class="nutrition-program__item">
 						<input class="nutrition-program__wight-loss-input" type="radio" id="weight-loss" name="nutrition-program" value="weight-loss" checked>
-						<label class="nutrition-program__weight-loss" for="weight-loss">
+						<label class="nutrition-program__weight-loss nutrition-program-label" for="weight-loss">
 							Похудение
 						</label>
 					</li>
 					<li class="nutrition-program__item">
 						<input class="nutrition-program__mass-gain" type="radio" id="mass-gain" name="nutrition-program" value="mass-gain">
-						<label class="nutrition-program__mass-gain" for="mass-gain">
+						<label class="nutrition-program__mass-gain nutrition-program-label" for="mass-gain">
 							Набор массы
 						</label>
 					</li>
 					<li class="nutrition-program__item">
 						<input class="nutrition-program__advise-input" type="radio" id="advise" name="nutrition-program" value="need-advise">
-						<label class="nutrition-program__advise" for="advise">
+						<label class="nutrition-program__advise nutrition-program-label" for="advise">
 							Не знаю (Нужен ваш совет)
 						</label>
 					</li>
 				</ul>
 			</fieldset>
 			<fieldset class="owner">
-				<legend class="owner__title">
+				<legend class="owner__title form-sibtitle">
 					Контактные данные (владельца кота)
 				</legend>
 				<label class="owner__email" for="owner-email">
 					E-mail:<span aria-hidden="true">*</span>
 				</label>
-				<input class="owner__email-input" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+				<input class="owner__email-input field" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
 				<label for="owner-tel">
 					Телефон: <span aria-hidden="true">*</span>
 				</label>
-				<input class="owner__tel-input" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+				<input class="owner__tel-input field" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
 			</fieldset>
 			<div class="comment">
-				<label class="comment__title" for="comment">
+				<label class="comment__title form-subtitle" for="comment">
 					Комментарий
 				</label>
-				<textarea class="comment__text" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+				<textarea class="comment__text field" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
 			</div>
 			<fieldset class="additional">
-				<legend class="additional__title">
+				<legend class="additional__title form-subtitle">
 					Дополнительно
 				</legend>
 				<ul class="additional__list">
 					<li class="additional__item">
 						<input class="additional__sweetener-input" type="checkbox" id="sweetener" name="additiona-products" value="sweetener" checked>
-						<label class="additional__sweetener" for="sweetener">
+						<label class="additional__sweetener additional-label" for="sweetener">
 							Сахарозаменитель
 						</label>
 					</li>
 					<li class="additional__item">
 						<input class="additional__water-input" type="checkbox" id="water" name="additiona-products" value="water">
-						<label class="additional__water" for="water">
+						<label class="additional__water additional-label" for="water">
 							Питьевая вода
 						</label>
 					</li>
 					<li class="additional__item">
 						<input class="additional__milk-input" type="checkbox" id="milk" name="additiona-products" value="milk">
-						<label class="additional__milk" for="milk">
+						<label class="additional__milk additional-label" for="milk">
 							Молоко
 						</label>
 					</li>
 					<li class="additional__item">
 						<input class="additional__vitamins-input" type="checkbox" id="vitamins" name="additiona-products" value="vitamins">
-						<label class="additional__vitamins" for="vitamins">
+						<label class="additional__vitamins additional-label" for="vitamins">
 							Витамины
 						</label>
 					</li>
 				</ul>
 			</fieldset>
-			<button class="form__button" type="submit">
+			<button class="form__button button button--primary" type="submit">
 				Отправить заявку
 			</button>
 			<small class="form__comment" aria-hidden="true">
@@ -120,7 +120,7 @@
 			Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
 		</address>
 		<div class="address__map">
-			<img class="address__map-image" src="#" alt="Карта">
+			<img class="address__map-image" src="/img/map-mobile.jpg" width="320" height="362" alt="Карта">
 		</div>
 	</section>
 </main>
