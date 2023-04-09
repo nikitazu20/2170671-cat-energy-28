@@ -14,7 +14,11 @@
 		<p class="hero__slogan">
 			Занялся собой? Займись котом!
 		</p>
-		<img class="hero__img" src="/img/chicken-small-mobile.png" width="320" height="302" alt="Питание Кэт Энерджи со вкусом курицы.">
+		<picture>
+			<source media="(min-width: 1440px)" srcset="/img/chicken500-desktop@1x.png 1x, /img/chicken500-desktop@2x.png 2x">
+			<source media="(min-width: 769px)" srcset="/img/chicken500-tablet@1x.png 1x, /img/chicken500-tablet@2x.png 2x">
+			<img class="hero__img" src="/img/chicken500-mobile@1x.png" width="320" height="302" srcset="/img/chicken500-mobile@2x.png 2x" alt="Питание Кэт Энерджи со вкусом курицы.">
+		</picture>
 		<a class="hero__button button button--primary" href="form.html">
 			Подобрать программу
 		</a>
