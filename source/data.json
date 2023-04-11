@@ -83,7 +83,7 @@
 				}
 			]
 		},
-		"chicken500": {
+		"chicken-promo": {
 			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
@@ -145,7 +145,153 @@
 					"height": 256
 				}
 			]
+		},
+		"products/chicken500": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 161,
+					"height": 172
+				},
+				{
+					"viewport": "tablet",
+					"width": 161,
+					"height": 172
+				},
+				{
+					"viewport": "mobile",
+					"width": 140,
+					"height": 112
+				}
+			]
+		},
+		"products/chicken1000": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 172,
+					"height": 196
+				},
+				{
+					"viewport": "tablet",
+					"width": 168,
+					"height": 206
+				},
+				{
+					"viewport": "mobile",
+					"width": 140,
+					"height": 112
+				}
+			]
+		},
+		"products/fish500": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "tablet",
+					"width": 163,
+					"height": 173
+				},
+				{
+					"viewport": "mobile",
+					"width": 140,
+					"height": 112
+				}
+			]
+		},
+		"products/fish1000": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 172,
+					"height": 196
+				},
+				{
+					"viewport": "tablet",
+					"width": 168,
+					"height": 200
+				},
+				{
+					"viewport": "mobile",
+					"width": 140,
+					"height": 112
+				}
+			]
+		},
+		"products/buckwheat500": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 161,
+					"height": 171
+				},
+				{
+					"viewport": "tablet",
+					"width": 161,
+					"height": 171
+				},
+				{
+					"viewport": "mobile",
+					"width": 140,
+					"height": 112
+				}
+			]
+		},
+		"products/buckwheat1000": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 172,
+					"height": 196
+				},
+				{
+					"viewport": "tablet",
+					"width": 168,
+					"height": 200
+				},
+				{
+					"viewport": "mobile",
+					"width": 140,
+					"height": 112
+				}
+			]
+		},
+		"products/rice500": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "tablet",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "mobile",
+					"width": 140,
+					"height": 112
+				}
+			]
 		}
-
 	}
 }
