@@ -292,6 +292,27 @@
 					"height": 112
 				}
 			]
+		},
+		"catalog-background": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 245,
+					"height": 289
+				},
+				{
+					"viewport": "tablet",
+					"width": 707,
+					"height": 200
+				},
+				{
+					"viewport": "mobile",
+					"width": 280,
+					"height": 290
+				}
+			]
 		}
 	}
 }

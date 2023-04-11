@@ -1,16 +1,9 @@
 .present {
 	position: relative;
 	min-height: 290px;
+	background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat;
 
-	&::after {
-		content: "";
-		background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), url("/img/catalog-background-mobile.jpg") no-repeat;
-		position: absolute;
-		min-width: 280px;
-		height: 290px;
-		top: 0;
-		left: 0;
-	}
+	@include bg-image("catalog-background");
 }
 
 .present__description {
