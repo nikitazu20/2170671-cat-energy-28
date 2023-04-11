@@ -3,12 +3,14 @@
 
 	&::after {
 		content: "";
-		background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), url("/img/cat-background-mobile.jpg") no-repeat;
+		background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat;
 		position: absolute;
 		width: 100%;
 		height: 302px;
 		top: 0;
 		left: 0;
+
+		@include bg-image("cat-background");
 	}
 }
 

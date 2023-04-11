@@ -14,17 +14,7 @@
 		<p class="hero__slogan">
 			Занялся собой? Займись котом!
 		</p>
-		<picture>
-			<source media="(min-width: 1280px)" type="image/avif" srcset="./img/chicken500-desktop@1x.avif 1x, ./img/chicken500-desktop@2x.avif 2x" width="552" height="499">
-			<source media="(min-width: 768px)" type="image/avif"  srcset="./img/chicken500-tablet@1x.avif 1x, ./img/chicken500-tablet@2x.avif 2x" width="709" height="609">
-			<source type="image/avif" srcset="./img/chicken500-tablet@1x.avif 1x, ./img/chicken500-tablet@2x.avif 2x" width="320" height="302">
-			<source media="(min-width: 1280px)" type="image/webp" srcset="./img/chicken500-desktop@1x.webp 1x, ./img/chicken500-desktop@2x.webp 2x" width="552" height="499">
-			<source media="(min-width: 768px)" type="image/webp"  srcset="./img/chicken500-tablet@1x.webp 1x, ./img/chicken500-tablet@2x.webp 2x" width="709" height="609">
-			<source type="image/webp" srcset="./img/chicken500-tablet@1x.webp 1x, ./img/chicken500-tablet@2x.webp 2x" width="320" height="302">
-			<source media="(min-width: 1280px)" srcset="./img/chicken500-desktop@1x.png 1x, ./img/chicken500-desktop@2x.png 2x" width="552" height="499">
-			<source media="(min-width: 768px)" srcset="./img/chicken500-tablet@1x.png 1x, ./img/chicken500-tablet@2x.png 2x" width="709" height="609">
-			<img class="hero__img" src="/img/chicken500-mobile@1x.png" width="320" height="302" srcset="./img/chicken500-mobile@2x.png 2x" alt="Питание Кэт Энерджи со вкусом курицы.">
-		</picture>
+		{% include "./templates/picture.twig" with {name: "chicken500", class: "hero__img", alt: "Питание Кэт Энерджи со вкусом курицы"} %}
 		<a class="hero__button button button--primary" href="form.html">
 			Подобрать программу
 		</a>
@@ -116,8 +106,8 @@
 		</dl>
 		<div class="example__slider">
 			<div class="slider">
-				<img class="slider__img" src="/img/cat-before-mobile.png" width="280" height="256" alt="Толстый кот.">
-				<img class="slider__img" src="/img/cat-after-mobile.png" width="280" height="256" alt="Худой кот">
+				{% include "./templates/picture.twig" with {name: "cat-before", class: "slider__img", alt: "Толстый кот"} %}
+				{% include "./templates/picture.twig" with {name: "cat-after", class: "slider__img", alt: "Худой кот"} %}
 				<button class="slider__button" type="button">
 					<span class="visually-hidden">
 						Переключатель толстого/худого кота
@@ -134,7 +124,7 @@
 			Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
 		</address>
 		<div class="address__map">
-			<img class="address__map-image" src="/img/map-mobile.jpg" width="320" height="362" alt="Карта">
+			{% include "./templates/picture.twig" with {name: "map", class: "address__map-img", alt: "Карта."} %}
 		</div>
 	</section>
 </main>
