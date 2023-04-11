@@ -120,7 +120,7 @@
 			Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
 		</address>
 		<div class="address__map">
-			<img class="address__map-image" src="/img/map-mobile.jpg" width="320" height="362" alt="Карта">
+			{% include "./templates/picture.twig" with {name: "map", class: "address__map-img", alt: "Карта."} %}
 		</div>
 	</section>
 </main>
