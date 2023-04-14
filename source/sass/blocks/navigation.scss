@@ -1,3 +1,14 @@
-.navigation {
-	//
+.navigation__toggle {
+	color: #000000;
+	background-color: #ffffff;
+	border: none;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 16px;
+		mask: url("../../icons/stack.svg#button-toggle-mobile") no-repeat center;
+		background: currentColor;
+	}
 }
