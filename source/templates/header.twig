@@ -1,7 +1,15 @@
 <header class="page-header">
 	<a class="page-header__logo" href="#">
-		<img class="page-header__logo-image" src="./icons/stack.svg#logo-img-mobile" width="34" height="38" alt="Фото логотипа Кэт Энерджию.">
-		<img class="page-header__logo-text" src="./icons/stack.svg#logo-text-mobile" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
+		<picture>
+			<source media="(min-width: 1280px)" srcset="./icons/stack.svg#logo-img-desktop" width="71" height="59">
+			<source media="(min-width: 768px)" srcset="./icons/stack.svg#logo-img-tablet" width="61" height="50">
+			<img class="page-header__logo-image" src="./icons/stack.svg#logo-img-mobile" width="34" height="38" alt="Фото логотипа Кэт Энерджию.">
+		</picture>
+		<picture>
+			<source media="(min-width: 1280px)" srcset="./icons/stack.svg#logo-text-desktop" width="118" height="22">
+			<source media="(min-width: 768px)" srcset="./icons/stack.svg#logo-text-tablet" width="102" height="19">
+			<img class="page-header__logo-text" src="./icons/stack.svg#logo-text-mobile" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
+		</picture>
 	</a>
 	<nav class="navigation">
 		<button class="navigation__toggle" type="button">
