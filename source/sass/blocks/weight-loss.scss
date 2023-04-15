@@ -3,20 +3,29 @@
 }
 
 .weight-loss__title {
+	&::before {
+		content: "";
+		display: block;
+		width: 50px;
+		height: 53px;
+		background: url("../../icons/stack.svg#weight-loss-mobile");
+
+		@media (min-width: 768px) {
+			width: 200px;
+			height: 211px;
+			background: url("../../icons/stack.svg#weight-loss-tablet");
+		}
+
+		@media (min-width: 1280px) {
+			width: 100px;
+			height: 106px;
+			background: url("../../icons/stack.svg#weight-loss-desktop");
+		}
+	}
 	font-family: var(--accent-font);
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 37px;
 	text-transform: uppercase;
-	color: #000000;
-}
-
-.weight-loss__link {
-	font-family: var(--accent-font);
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 16px;
-	text-transform: uppercase;
-	text-decoration: none;
 	color: #000000;
 }

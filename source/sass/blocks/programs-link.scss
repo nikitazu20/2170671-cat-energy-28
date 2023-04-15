@@ -1,0 +1,21 @@
+.programs-link {
+	font-family: var(--accent-font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	display: flex;
+	gap: 15px;
+	align-items: center;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 12px;
+		mask: url("../../icons/stack.svg#arrow");
+		background: #000000;
+	}
+}
