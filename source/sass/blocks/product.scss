@@ -1,3 +1,19 @@
+.product--show-all {
+	&::before {
+		content: "";
+		display: block;
+		width: 30px;
+		height: 30px;
+		background: url("../../icons/stack.svg#plus-mobile");
+
+		@media (min-width: 768px) {
+			width: 60px;
+			height: 60px;
+			background: url("../../icons/stack.svg#plus-tablet");
+		}
+	}
+}
+
 .product__name {
 	font-family: var(--accent-font);
 	text-transform: uppercase;
