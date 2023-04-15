@@ -1,3 +1,69 @@
-.advantages {
-	//
+.advantages__item {
+	display: flex;
+	gap: 21px;
+	align-items: center;
+}
+
+.advantages__item--leaf {
+	&::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		background: url("../../icons/stack.svg#leaf-mobile");
+
+		@media (min-width: 768px) {
+			width: 80px;
+			height: 80px;
+			background: url("../../icons/stack.svg#leaf-tablet");
+		}
+	}
+}
+
+.advantages__item--powder {
+	&::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		background: url("../../icons/stack.svg#powder-mobile");
+
+		@media (min-width: 768px) {
+			width: 80px;
+			height: 80px;
+			background: url("../../icons/stack.svg#powder-tablet");
+		}
+	}
+}
+
+.advantages__item--eat {
+	&::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		background: url("../../icons/stack.svg#eat-mobile");
+
+		@media (min-width: 768px) {
+			width: 80px;
+			height: 80px;
+			background: url("../../icons/stack.svg#eat-tablet");
+		}
+	}
+}
+
+.advantages__item--time {
+	&::before {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		background: url("../../icons/stack.svg#time-mobile");
+
+		@media (min-width: 768px) {
+			width: 80px;
+			height: 80px;
+			background: url("../../icons/stack.svg#time-tablet");
+		}
+	}
 }
