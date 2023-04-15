@@ -1,7 +1,10 @@
 <footer class="page-footer">
 	<a href="" class="page-footer__logo">
-		<img class="page-footer__logo-text logo-text" src="#" alt="Кэт Энерджи.">
-	</a>
+		<picture>
+			<source media="(min-width: 1280px)" srcset="./icons/stack.svg#logo-text-desktop" width="118" height="22">
+			<source media="(min-width: 768px)" srcset="./icons/stack.svg#logo-text-tablet" width="102" height="19">
+			<img class="page-header__logo-text" src="./icons/stack.svg#logo-text-mobile" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
+		</picture>
 	<ul class="page-footer__social-list">
 		<li class="page-footer__social-item">
 			<a href="" class="page-footer__social-link page-footer__social-link--vk">
@@ -29,6 +32,6 @@
 		<p class="page-footer__academy-logo-text">
 			HTML Academy
 		</p>
-		<img class="page-footer__academy-logo-image" src="#" alt="Логотип HTML Academy.">
+		<img class="page-header__logo-text" src="./icons/stack.svg#htmlacademy" width="27" height="34" alt="Сайт html academy.">
 	</div>
 </footer>
