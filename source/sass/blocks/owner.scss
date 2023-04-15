@@ -1,3 +1,24 @@
-.owner {
-	//
+.owner__email-input {
+	min-width: 220px;
+	position: relative;
+}
+
+.owner__email-icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	mask: url("../../icons/stack.svg#email-mobile") no-repeat center;
+	background: #000000;
+}
+
+.owner__tel-input {
+	min-width: 220px;
+}
+
+.owner__tel-icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	mask: url("../../icons/stack.svg#email-mobile") no-repeat center;
+	background: #000000;
 }
