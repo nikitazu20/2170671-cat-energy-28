@@ -8,18 +8,16 @@
 		display: block;
 		width: 68px;
 		height: 50px;
-		background: url("../../icons/stack.svg#mass-gain-mobile");
+		background: url("../../icons/stack.svg#mass-gain");
 
 		@media (min-width: 768px) {
 			width: 269px;
 			height: 200px;
-			background: url("../../icons/stack.svg#mass-gain-tablet");
 		}
 
 		@media (min-width: 1280px) {
 			width: 135px;
 			height: 100px;
-			background: url("../../icons/stack.svg#mass-gain-desktop");
 		}
 	}
 	font-family: var(--accent-font);

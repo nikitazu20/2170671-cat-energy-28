@@ -8,18 +8,16 @@
 		display: block;
 		width: 50px;
 		height: 53px;
-		background: url("../../icons/stack.svg#weight-loss-mobile");
+		background: url("../../icons/stack.svg#weight-loss");
 
 		@media (min-width: 768px) {
 			width: 200px;
 			height: 211px;
-			background: url("../../icons/stack.svg#weight-loss-tablet");
 		}
 
 		@media (min-width: 1280px) {
 			width: 100px;
 			height: 106px;
-			background: url("../../icons/stack.svg#weight-loss-desktop");
 		}
 	}
 	font-family: var(--accent-font);

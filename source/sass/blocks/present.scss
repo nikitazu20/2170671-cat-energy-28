@@ -4,12 +4,11 @@
 		display: block;
 		width: 78px;
 		height: 80px;
-		background: url("../../icons/stack.svg#present-mobile");
+		background: url("../../icons/stack.svg#present");
 
 		@media (min-width: 768px) {
 			width: 80px;
 			height: 83px;
-			background: url("../../icons/stack.svg#present-tablet");
 		}
 	}
 	position: relative;
