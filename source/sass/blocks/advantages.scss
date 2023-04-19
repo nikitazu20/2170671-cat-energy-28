@@ -1,61 +1,31 @@
-.advantages__item--leaf {
-	&::before {
-		content: "";
-		display: block;
-		width: 60px;
-		height: 60px;
-		background: #68b738 url("../../icons/stack.svg#leaf") no-repeat center / 60px;
-		background-size: 30px 37px;
+.advantages__item {
+	display: flex;
+	gap: 20px;
 
-		@media (min-width: 768px) {
-			width: 80px;
-			height: 80px;
-		}
+	&--icon_leaf {
+		--icon: url("../../icons/stack.svg#leaf");
 	}
-}
 
-.advantages__item--powder {
-	&::before {
-		content: "";
-		display: block;
-		width: 60px;
-		height: 60px;
-		background: #68b738 url("../../icons/stack.svg#powder") no-repeat center / 60px;
-		background-size: 30px 37px;
-
-		@media (min-width: 768px) {
-			width: 80px;
-			height: 80px;
-		}
+	&--icon_powder {
+		--icon: url("../../icons/stack.svg#leaf");
 	}
-}
 
-.advantages__item--eat {
-	&::before {
-		content: "";
-		display: block;
-		width: 60px;
-		height: 60px;
-		background: #68b738 url("../../icons/stack.svg#eat") no-repeat center / 60px;
-		background-size: 30px 37px;
-
-		@media (min-width: 768px) {
-			width: 80px;
-			height: 80px;
-		}
+	&--icon_eat {
+		--icon: url("../../icons/stack.svg#eat");
 	}
-}
 
-.advantages__item--time {
+	&--icon_time {
+		--icon: url("../../icons/stack.svg#time");
+	}
+
 	&::before {
 		content: "";
 		display: block;
-		width: 60px;
+		min-width: 60px;
 		height: 60px;
-		background: #68b738 url("../../icons/stack.svg#time") no-repeat center / 60px;
-		background-size: 30px 37px;
+		background: #68b738 var(--icon) no-repeat center / 40px;
 
-		@media (min-width: 768px) {
+		@media #{$not-mobile} {
 			width: 80px;
 			height: 80px;
 		}

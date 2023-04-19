@@ -6,7 +6,7 @@
 		height: 30px;
 		background: url("../../icons/stack.svg#plus");
 
-		@media (min-width: 768px) {
+		@media #{$not-mobile} {
 			width: 60px;
 			height: 60px;
 		}

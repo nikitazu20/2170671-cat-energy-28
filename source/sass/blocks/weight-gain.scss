@@ -10,12 +10,12 @@
 		height: 68px;
 		background: url("../../icons/stack.svg#mass-gain");
 
-		@media (min-width: 768px) {
+		@media #{$not-mobile} {
 			width: 272px;
 			height: 272px;
 		}
 
-		@media (min-width: 1280px) {
+		@media #{$desktop-only} {
 			width: 136px;
 			height: 136px;
 		}
