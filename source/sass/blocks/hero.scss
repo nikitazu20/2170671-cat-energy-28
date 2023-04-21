@@ -1,11 +1,12 @@
 .hero {
 	position: relative;
+	padding: 21px 0;
 
 	&::after {
 		content: "";
 		background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat;
 		position: absolute;
-		width: 100%;
+		width: 320px;
 		height: 302px;
 		top: 0;
 		left: 0;
@@ -19,10 +20,11 @@
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 36px;
-	text-transform: uppercase;
+	text-align: center;
 	color: #ffffff;
 	position: relative;
 	z-index: 1;
+	margin: 0;
 }
 
 .hero__slogan {
@@ -34,9 +36,18 @@
 	text-transform: uppercase;
 	position: relative;
 	z-index: 1;
+	text-align: center;
+	margin: 29px 0;
 }
 
 .hero__img {
+	display: block;
 	position: relative;
 	z-index: 1;
+	margin: 3px 0 3px;
+}
+
+.hero__button {
+	padding: 7px 44px;
+	min-width: 280px;
 }

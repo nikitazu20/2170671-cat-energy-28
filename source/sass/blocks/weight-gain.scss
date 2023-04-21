@@ -1,8 +1,14 @@
 .weight-gain {
 	background-color: #f2f2f2;
+	padding: 20px;
 }
 
 .weight-gain__title {
+	display: flex;
+	gap: 9px;
+	margin: 0 0 23px;
+	align-items: center;
+
 	&::before {
 		content: "";
 		display: block;

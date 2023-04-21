@@ -1,12 +1,15 @@
 .button {
 	font-family: var(--accent-font);
+	display: block;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+	text-align: center;
 	color: #ffffff;
 	text-decoration: none;
 	border: none;
+	cursor: pointer;
 
 	&--primary {
 		background-color: var(--accent-color);

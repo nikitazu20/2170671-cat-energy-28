@@ -1,8 +1,15 @@
 .weight-loss {
 	background-color: #f2f2f2;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 
 .weight-loss__title {
+	display: flex;
+	margin: 0 0 23px;
+	align-items: center;
+	gap: 18px;
+
 	&::before {
 		content: "";
 		display: block;
