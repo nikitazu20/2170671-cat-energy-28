@@ -1,0 +1,32 @@
+.product-show-all {
+	padding: 16px 0 16px;
+
+	&::before {
+		content: "";
+		display: block;
+		margin: 0 auto 23px;
+		width: 30px;
+		height: 30px;
+		background: url("../../icons/stack.svg#plus") no-repeat center;
+
+		@media #{$not-mobile} {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+.product-show-all__title {
+	text-align: center;
+	display: block;
+	margin: 8px 0;
+}
+
+.product-show-all__description {
+	text-align: center;
+	margin-bottom: 21px;
+}
+
+.product-show-all__link {
+	padding: 10px 94px;
+}

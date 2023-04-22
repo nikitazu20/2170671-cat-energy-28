@@ -4,38 +4,48 @@
 
 {% block main %}
 <main class="main">
-	<h1 class="page-title">
-		Каталог продукции
-	</h1>
-	<section class="products">
+		<div class="page__centerer">
+			<h1 class="main__title page-title">
+			Каталог продукции
+			</h1>
+		</div>
+	<section class="page__centerer products">
 		<h2 class="visually-hidden">
 			Карточки товаров
 		</h2>
 		<ul class="products__list">
 			<li class="products__item product">
 				<h3 class="product__name">
-					Cat Energy PRO 500 г
+					Cat Energy<br>PRO 500 г
 				</h3>
-				{% include "./templates/picture.twig" with {name: "products/chicken500", class: "product__image", alt: "Cat Energy PRO 500г со вкусом курицы."} %}
-				<dl class="product__characteristics product">
-					<dt class="product__title">
-						Масса
-					</dt>
-					<dd class="product__description">
-						500 г
-					</dd>
-					<dt class="product__title">
-						Вкус
-					</dt>
-					<dd class="product__description">
-						Курица
-					</dd>
-					<dt class="product__title">
-						Цена
-					</dt>
-					<dd class="product__description">
-						700 &#8381;
-					</dd>
+				<div class="product__image-wrapper">
+					{% include "./templates/picture.twig" with {name: "products/chicken500", class: "product__image", alt: "Cat Energy PRO 500г со вкусом курицы."} %}
+				</div>
+				<dl class="product__characteristics">
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Масса
+						</dt>
+						<dd class="product__description">
+							500 г
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Вкус
+						</dt>
+						<dd class="product__description">
+							Курица
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Цена
+						</dt>
+						<dd class="product__description">
+							700 &#8381;
+						</dd>
+					</div>
 				</dl>
 				<a class="product__link button button--primary" href="#">
 					Заказать
@@ -43,28 +53,36 @@
 			</li>
 			<li class="products__item product">
 				<h3 class="product__name">
-					Cat Energy PRO 1000 г
+					Cat Energy<br>PRO 1000 г
 				</h3>
-				{% include "./templates/picture.twig" with {name: "products/chicken1000", class: "product__image", alt: "Cat Energy PRO 1000г со вкусом курицы."} %}
-				<dl class="product__characteristics product">
-					<dt class="product__title">
-						Масса
-					</dt>
-					<dd class="product__description">
-						1000 г
-					</dd>
-					<dt class="product__title">
-						Вкус
-					</dt>
-					<dd class="product__description">
-						Курица
-					</dd>
-					<dt class="product__title">
-						Цена
-					</dt>
-					<dd class="product__description">
-						1000 &#8381;
-					</dd>
+				<div class="product__image-wrapper">
+					{% include "./templates/picture.twig" with {name: "products/chicken1000", class: "product__image", alt: "Cat Energy PRO 1000г со вкусом курицы."} %}
+				</div>
+				<dl class="product__characteristics">
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Масса
+						</dt>
+						<dd class="product__description">
+							1000 г
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Вкус
+						</dt>
+						<dd class="product__description">
+							Курица
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Цена
+						</dt>
+						<dd class="product__description">
+							1000 &#8381;
+						</dd>
+					</div>
 				</dl>
 				<a class="product__link button button--primary" href="#">
 					Заказать
@@ -72,28 +90,36 @@
 			</li>
 			<li class="products__item product">
 				<h3 class="product__name">
-					Cat Energy PRO 500 г
+					Cat Energy<br>PRO 500 г
 				</h3>
-				{% include "./templates/picture.twig" with {name: "products/fish500", class: "product__image", alt: "Cat Energy PRO 500г со вкусом рыбы."} %}
-				<dl class="product__characteristics product">
-					<dt class="product__title">
-						Масса
-					</dt>
-					<dd class="product__description">
-						500 г
-					</dd>
-					<dt class="product__title">
-						Вкус
-					</dt>
-					<dd class="product__description">
-						Рыба
-					</dd>
-					<dt class="product__title">
-						Цена
-					</dt>
-					<dd class="product__description">
-						700 &#8381;
-					</dd>
+				<div class="product__image-wrapper">
+					{% include "./templates/picture.twig" with {name: "products/fish500", class: "product__image", alt: "Cat Energy PRO 500г со вкусом рыбы."} %}
+				</div>
+				<dl class="product__characteristics">
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Масса
+						</dt>
+						<dd class="product__description">
+							500 г
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Вкус
+						</dt>
+						<dd class="product__description">
+							Рыба
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Цена
+						</dt>
+						<dd class="product__description">
+							700 &#8381;
+						</dd>
+					</div>
 				</dl>
 				<a class="product__link button button--primary" href="#">
 					Заказать
@@ -101,28 +127,36 @@
 			</li>
 			<li class="products__item product">
 				<h3 class="product__name">
-					Cat Energy PRO 1000 г
+					Cat Energy<br>PRO 1000 г
 				</h3>
-				{% include "./templates/picture.twig" with {name: "products/fish1000", class: "product__image", alt: "Cat Energy PRO 1000г со вкусом рыбы."} %}
-				<dl class="product__characteristics product">
-					<dt class="product__title">
-						Масса
-					</dt>
-					<dd class="product__description">
-						1000 г
-					</dd>
-					<dt class="product__title">
-						Вкус
-					</dt>
-					<dd class="product__description">
-						Рыба
-					</dd>
-					<dt class="product__title">
-						Цена
-					</dt>
-					<dd class="product__description">
-						1000 &#8381;
-					</dd>
+				<div class="product__image-wrapper">
+					{% include "./templates/picture.twig" with {name: "products/fish1000", class: "product__image", alt: "Cat Energy PRO 1000г со вкусом рыбы."} %}
+				</div>
+				<dl class="product__characteristics">
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Масса
+						</dt>
+						<dd class="product__description">
+							1000 г
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Вкус
+						</dt>
+						<dd class="product__description">
+							Рыба
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Цена
+						</dt>
+						<dd class="product__description">
+							1000 &#8381;
+						</dd>
+					</div>
 				</dl>
 				<a class="product__link button button--primary" href="#">
 					Заказать
@@ -130,28 +164,36 @@
 			</li>
 			<li class="products__item product">
 				<h3 class="product__name">
-					Cat Energy slim 500 г
+					Cat Energy<br>slim 500 г
 				</h3>
-				{% include "./templates/picture.twig" with {name: "products/buckwheat500", class: "product__image", alt: "Cat Energy slim 500 г со вкусом гречки."} %}
-				<dl class="product__characteristics product">
-					<dt class="product__title">
-						Масса
-					</dt>
-					<dd class="product__description">
-						500 г
-					</dd>
-					<dt class="product__title">
-						Вкус
-					</dt>
-					<dd class="product__description">
-						Гречка
-					</dd>
-					<dt class="product__title">
-						Цена
-					</dt>
-					<dd class="product__description">
-						400 &#8381;
-					</dd>
+				<div class="product__image-wrapper">
+					{% include "./templates/picture.twig" with {name: "products/buckwheat500", class: "product__image", alt: "Cat Energy slim 500 г со вкусом гречки."} %}
+				</div>
+				<dl class="product__characteristics">
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Масса
+						</dt>
+						<dd class="product__description">
+							500 г
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Вкус
+						</dt>
+						<dd class="product__description">
+							Гречка
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Цена
+						</dt>
+						<dd class="product__description">
+							400 &#8381;
+						</dd>
+					</div>
 				</dl>
 				<a class="product__link button button--primary" href="#">
 					Заказать
@@ -159,28 +201,36 @@
 			</li>
 			<li class="products__item product">
 				<h3 class="product__name">
-					Cat Energy slim 1000 г
+					Cat Energy<br>slim 1000 г
 				</h3>
-				{% include "./templates/picture.twig" with {name: "products/buckwheat1000", class: "product__image", alt: "Cat Energy slim 1000 г со вкусом гречки"} %}
-				<dl class="product__characteristics product">
-					<dt class="product__title">
-						Масса
-					</dt>
-					<dd class="product__description">
-						1000 г
-					</dd>
-					<dt class="product__title">
-						Вкус
-					</dt>
-					<dd class="product__description">
-						Гречка
-					</dd>
-					<dt class="product__title">
-						Цена
-					</dt>
-					<dd class="product__description">
-						700 &#8381;
-					</dd>
+				<div class="product__image-wrapper">
+					{% include "./templates/picture.twig" with {name: "products/buckwheat1000", class: "product__image", alt: "Cat Energy slim 1000 г со вкусом гречки"} %}
+				</div>
+				<dl class="product__characteristics">
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Масса
+						</dt>
+						<dd class="product__description">
+							1000 г
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Вкус
+						</dt>
+						<dd class="product__description">
+							Гречка
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Цена
+						</dt>
+						<dd class="product__description">
+							700 &#8381;
+						</dd>
+					</div>
 				</dl>
 				<a class="product__link button button--primary" href="#">
 					Заказать
@@ -188,47 +238,55 @@
 			</li>
 			<li class="products__item product">
 				<h3 class="product__name">
-					Cat Energy slim 500 г
+					Cat Energy<br>slim 500 г
 				</h3>
+				<div class="product__image-wrapper">
 				{% include "./templates/picture.twig" with {name: "products/rice500", class: "product__image", alt: "Cat Energy slim 500 г со вкусом риса."} %}
-				<dl class="product__characteristics product">
-					<dt class="product__title">
-						Масса
-					</dt>
-					<dd class="product__description">
-						500 г
-					</dd>
-					<dt class="product__title">
-						Вкус
-					</dt>
-					<dd class="product__description">
-						Рис
-					</dd>
-					<dt class="product__title">
-						Цена
-					</dt>
-					<dd class="product__description">
-						500 &#8381;
-					</dd>
+				</div>
+				<dl class="product__characteristics">
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Масса
+						</dt>
+						<dd class="product__description">
+							500 г
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Вкус
+						</dt>
+						<dd class="product__description">
+							Рис
+						</dd>
+					</div>
+					<div class="product__characteristics-wrapper">
+						<dt class="product__title">
+							Цена
+						</dt>
+						<dd class="product__description">
+							500 &#8381;
+						</dd>
+					</div>
 				</dl>
 				<a class="product__link button button--primary" href="#">
 					Заказать
 				</a>
 			</li>
-			<li class="products__item product product--show-all">
-				<strong class="product__title product__title--show-all">
+			<li class="products__item product-show-all">
+				<strong class="product-show-all__title">
 					Показать еще 100500 товаров
 				</strong>
-				<p class="product__description">
+				<p class="product-show-all__description">
 					На самом деле вкусов гораздо больше!
 				</p>
-				<a class="product__show-all button button--secondary" href="#">
+				<a class="product-show-all__link button button--secondary" href="#">
 					Показать все
 				</a>
 			</li>
 		</ul>
 	</section>
-	<section class="additional-products">
+	<section class="page__centerer additional-products">
 		<h2 class="additional-products__title">
 			Дополнительные товары
 		</h2>
@@ -238,18 +296,20 @@
 					Сахарозаменитель
 				</h3>
 				<dl class="additional-product__characteristics">
-					<dt class="visually-hidden">
-						Объем
-					</dt>
-					<dd class="additional-product__value">
-						1 упаковка (100 г)
-					</dd>
-					<dt class="visually-hidden">
-						Цена
-					</dt>
-					<dd class="additional-product__value">
-						200 ₽
-					</dd>
+					<div class="additional-product__characteristics-wrapper">
+						<dt class="visually-hidden">
+							Объем
+						</dt>
+						<dd class="additional-product__value">
+							1 упаковка (100 г)
+						</dd>
+						<dt class="visually-hidden">
+							Цена
+						</dt>
+						<dd class="additional-product__value">
+							200 ₽
+						</dd>
+					</div>
 				</dl>
 				<a class="additional-product__link button button--primary" href="#">
 					Заказать
@@ -260,18 +320,20 @@
 					Питьевая вода
 				</h3>
 				<dl class="additional-product__characteristics">
-					<dt class="visually-hidden">
-						Объем
-					</dt>
-					<dd class="additional-product__value">
-						5 литров
-					</dd>
-					<dt class="visually-hidden">
-						Цена
-					</dt>
-					<dd class="additional-product__value">
-						50 ₽
-					</dd>
+					<div class="additional-product__characteristics-wrapper">
+						<dt class="visually-hidden">
+							Объем
+						</dt>
+						<dd class="additional-product__value">
+							5 литров
+						</dd>
+						<dt class="visually-hidden">
+							Цена
+						</dt>
+						<dd class="additional-product__value">
+							50 ₽
+						</dd>
+					</div>
 				</dl>
 				<a class="additional-product__link button button--primary" href="#">
 					Заказать
@@ -282,18 +344,20 @@
 					Молоко
 				</h3>
 				<dl class="additional-product__characteristics">
-					<dt class="visually-hidden">
-						Объем
-					</dt>
-					<dd class="additional-product__value">
-						1 литр
-					</dd>
-					<dt class="visually-hidden">
-						Цена
-					</dt>
-					<dd class="additional-product__value">
-						100 ₽
-					</dd>
+					<div class="additional-product__characteristics-wrapper">
+						<dt class="visually-hidden">
+							Объем
+						</dt>
+						<dd class="additional-product__value">
+							1 литр
+						</dd>
+						<dt class="visually-hidden">
+							Цена
+						</dt>
+						<dd class="additional-product__value">
+							100 ₽
+						</dd>
+					</div>
 				</dl>
 				<a class="additional-product__link button button--primary" href="#">
 					Заказать
@@ -304,18 +368,20 @@
 					Витамины
 				</h3>
 				<dl class="additional-product__characteristics">
-					<dt class="visually-hidden">
-						Объем
-					</dt>
-					<dd class="additional-product__value">
-						1 упаковка (30 г)
-					</dd>
-					<dt class="visually-hidden">
-						Цена
-					</dt>
-					<dd class="additional-product__value">
-						300 ₽
-					</dd>
+					<div class="additional-product__characteristics-wrapper">
+						<dt class="visually-hidden">
+							Объем
+						</dt>
+						<dd class="additional-product__value">
+							1 упаковка (30 г)
+						</dd>
+						<dt class="visually-hidden">
+							Цена
+						</dt>
+						<dd class="additional-product__value">
+							300 ₽
+						</dd>
+					</div>
 				</dl>
 				<a class="additional-product__link button button--primary" href="#">
 					Заказать
@@ -329,15 +395,17 @@
 		</div>
 	</section>
 	<section class="address">
-		<h2 class="address__title">
-			Приглашаем к сотрудничеству дилеров!
-		</h2>
-		<address class="address__number">
-			Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-		</address>
-		<div class="address__map">
-			{% include "./templates/picture.twig" with {name: "map", class: "address__map-img", alt: "Карта."} %}
+		<div class="page__centerer address__wrapper">
+			<h2 class="address__title">
+				Приглашаем к сотрудничеству дилеров!
+			</h2>
+			<address class="address__number">
+				Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+			</address>
 		</div>
+			<div class="address__map">
+				{% include "./templates/picture.twig" with {name: "map", class: "address__map-img", alt: "Карта."} %}
+			</div>
 	</section>
 </main>
 {% endblock %}

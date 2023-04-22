@@ -1,7 +1,15 @@
 .present {
+	padding: 43px 58px;
+	position: relative;
+	min-height: 290px;
+	background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat;
+
+	@include bg-image("catalog-background");
+
 	&::before {
 		content: "";
 		display: block;
+		margin: 0 auto 48px;
 		width: 78px;
 		height: 80px;
 		background: url("../../icons/stack.svg#present");
@@ -11,11 +19,6 @@
 			height: 83px;
 		}
 	}
-	position: relative;
-	min-height: 290px;
-	background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat;
-
-	@include bg-image("catalog-background");
 }
 
 .present__description {
@@ -24,4 +27,7 @@
 	color: #ffffff;
 	position: relative;
 	z-index: 1;
+	text-align: center;
+	margin: 0 auto;
+	width: 161px;
 }
