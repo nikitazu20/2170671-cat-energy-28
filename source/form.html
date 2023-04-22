@@ -4,32 +4,40 @@
 
 {% block main %}
 <main class="main">
-	<h1 class="page-title">
-		Подбор программы
-	</h1>
-	<section class="page-form">
+	<div class="page__centerer">
+		<h1 class="main__page-title page-title">
+			Подбор программы
+		</h1>
+	</div>
+	<section class="page__centerer page-form">
 		<form class="form" action="https://echo.htmlacademy.ru/" method="post">
 			<h2 class="form__title">
 				Заполните анкету, и мы подберем программу питания для вашего кота
 			</h2>
-			<fieldset class="cat-information">
+			<fieldset class="form__cat-information cat-information">
 				<legend class="visually-hidden">
 					Заполните имя, вес и возраст домашнего питомца
 				</legend>
-				<label class="cat-information__cat-name cat-information-label" for="cat-name">
-					Имя:<span aria-hidden="true">*</span>
-				</label>
-				<input class="cat-information__cat-name-input field" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
-				<label class="cat-information__cat-weight cat-information-label" for="cat-weight">
-					Вес (кг):<span aria-hidden="true">*</span>
-				</label>
-				<input class="cat-information__cat-weight-input field" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
-				<label class="cat-information__cat-age cat-information-label" for="cat-age">
-					Возраст (лет):
-				</label>
-				<input class="cat-information__cat-age-input field" type="number" id="cat-age" name="cat-age" placeholder="7">
+				<div class="cat-information__wrapper">
+					<label class="cat-information__cat-name cat-information-label" for="cat-name">
+						Имя:<span aria-hidden="true">*</span>
+					</label>
+					<input class="cat-information__cat-name-input field" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
+				</div>
+				<div class="cat-information__wrapper">
+					<label class="cat-information__cat-weight cat-information-label" for="cat-weight">
+						Вес&nbsp;(кг):<span aria-hidden="true">*</span>
+					</label>
+					<input class="cat-information__cat-weight-input field" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+				</div>
+				<div class="cat-information__wrapper">
+					<label class="cat-information__cat-age cat-information-label" for="cat-age">
+						Возраст&nbsp;(лет):
+					</label>
+					<input class="cat-information__cat-age-input field" type="number" id="cat-age" name="cat-age" placeholder="7">
+				</div>
 			</fieldset>
-			<fieldset class="nutrition-program">
+			<fieldset class="form__nutrition-program nutrition-program">
 				<legend class="visually-hidden">
 					Выберите программу питания
 				</legend>
@@ -54,28 +62,32 @@
 					</li>
 				</ul>
 			</fieldset>
-			<fieldset class="owner">
+			<fieldset class="form__owner owner">
 				<legend class="owner__title form-subtitle">
 					Контактные данные (владельца кота)
 				</legend>
-				<label class="owner__email" for="owner-email">
-					E-mail:<span aria-hidden="true">*</span>
-				</label>
-				<input class="owner__email-input field" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
-				<span class="owner__email-icon"></span>
-				<label for="owner-tel">
-					Телефон: <span aria-hidden="true">*</span>
-				</label>
-				<input class="owner__tel-input field" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
-				<span class="owner__tel-icon"></span>
+				<div class="owner__wrapper">
+					<label class="owner__email" for="owner-email">
+						E-&nbsp;mail:<span aria-hidden="true">*</span>
+					</label>
+					<input class="owner__email-input field" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+					<span class="owner__email-icon"></span>
+				</div>
+				<div class="owner__wrapper">
+					<label for="owner-tel">
+						Телефон:&nbsp;<span aria-hidden="true">*</span>
+					</label>
+					<input class="owner__tel-input field" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+					<span class="owner__tel-icon"></span>
+				</div>
 			</fieldset>
-			<div class="comment">
+			<div class="form__comment comment">
 				<label class="comment__title form-subtitle" for="comment">
 					Комментарий
 				</label>
 				<textarea class="comment__text field" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
 			</div>
-			<fieldset class="additional">
+			<fieldset class="form__additional additional">
 				<legend class="additional__title form-subtitle">
 					Дополнительно
 				</legend>
@@ -115,15 +127,17 @@
 		</form>
 	</section>
 	<section class="address">
-		<h2 class="address__title">
-			Приглашаем к сотрудничеству дилеров!
-		</h2>
-		<address class="address__number">
-			Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-		</address>
-		<div class="address__map">
-			{% include "./templates/picture.twig" with {name: "map", class: "address__map-img", alt: "Карта."} %}
+		<div class="page__centerer address__wrapper">
+			<h2 class="address__title">
+				Приглашаем к сотрудничеству дилеров!
+			</h2>
+			<address class="address__number">
+				Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+			</address>
 		</div>
+			<div class="address__map">
+				{% include "./templates/picture.twig" with {name: "map", class: "address__map-img", alt: "Карта."} %}
+			</div>
 	</section>
 </main>
 {% endblock %}

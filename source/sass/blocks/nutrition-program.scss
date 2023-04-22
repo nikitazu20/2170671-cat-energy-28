@@ -1,3 +1,18 @@
 .nutrition-program {
-	//
+	border: none;
+	padding: 0;
+}
+
+.nutrition-program__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
+.nutrition-program__item {
+	display: flex;
+	gap: 15px;
 }

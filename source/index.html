@@ -86,7 +86,6 @@
 				</p>
 			</div>
 			<dl class="example__list">
-				<div class="example__list-wrapper">
 					<div class="example__item">
 						<dt class="example__item-description">
 							Снижение<br>веса
@@ -103,12 +102,11 @@
 							60 дней
 						</dd>
 					</div>
-				</div>
 				<div class="example__item example__item--price">
-					<dt class="example__item-description item__description--price">
+					<dt class="example__item-description example__item-description--price">
 						Затраты на питание
 					</dt>
-					<dd class="example__number item__description--price">
+					<dd class="example__number example__number--price">
 						15 000 РУБ.
 					</dd>
 				</div>
@@ -135,9 +133,9 @@
 				Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
 			</address>
 		</div>
-			<div class="address__map">
+		<div class="address__map">
 				{% include "./templates/picture.twig" with {name: "map", class: "address__map-img", alt: "Карта."} %}
-			</div>
+		</div>
 	</section>
 </main>
 {% endblock %}
