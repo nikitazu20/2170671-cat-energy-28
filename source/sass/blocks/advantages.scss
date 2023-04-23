@@ -1,9 +1,29 @@
 .advantages__container {
 	margin-bottom: 52px;
+
+	@media #{$tablet-only} {
+		margin-bottom: 90px;
+	}
+
+	@media #{$desktop-only} {
+		margin: 69px 0 69px;
+	}
 }
 
 .advantages__title {
 	margin: 20px 0 40px;
+
+	@media #{$tablet-only} {
+		font-size: 60px;
+		line-height: 60px;
+		margin: 32px 0 32px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 60px;
+		line-height: 60px;
+		margin: 32px 0 32px;
+	}
 }
 
 .advantages__list {
@@ -13,18 +33,47 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+
+	@media #{$tablet-only} {
+		flex-direction: row;
+		flex-wrap: wrap;
+		column-gap: 153px;
+		row-gap: 37px;
+	}
+
+	@media #{$desktop-only} {
+		flex-direction: row;
+		gap: 94px;
+	}
 }
 
 .advantages__item {
 	display: flex;
+	align-items: center;
 	gap: 20px;
+
+	@media #{$tablet-only} {
+		width: 230px;
+		flex-direction: column;
+		font-size: 16px;
+		line-height: 24px;
+		gap: 31px;
+	}
+
+	@media #{$desktop-only} {
+		width: 230px;
+		font-size: 16px;
+		line-height: 24px;
+		flex-direction: column;
+		gap: 31px;
+	}
 
 	&--icon_leaf {
 		--icon: url("../../icons/stack.svg#leaf");
 	}
 
 	&--icon_powder {
-		--icon: url("../../icons/stack.svg#leaf");
+		--icon: url("../../icons/stack.svg#powder");
 	}
 
 	&--icon_eat {
@@ -42,9 +91,16 @@
 		height: 60px;
 		background: #68b738 var(--icon) no-repeat center / 40px;
 
-		@media #{$not-mobile} {
-			width: 80px;
+		@media #{$tablet-only} {
+			align-self: start;
+			min-width: 80px;
 			height: 80px;
+		}
+
+		@media #{$desktop-only} {
+			min-width: 80px;
+			height: 80px;
+			align-self: start;
 		}
 	}
 }

@@ -5,7 +5,12 @@
 	flex-direction: column;
 
 	@media #{$not-mobile} {
+		margin-bottom: 45px;
 		gap: 30px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 71px;
 	}
 
 	@media #{$desktop-only} {
