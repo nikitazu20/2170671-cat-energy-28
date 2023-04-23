@@ -1,7 +1,10 @@
 .weight-loss {
 	background-color: #f2f2f2;
 	padding: 20px;
-	margin-bottom: 20px;
+
+	@media #{$tablet-only} {
+		padding: 77px 62px 53px 52px;
+	}
 }
 
 .weight-loss__title {
@@ -9,6 +12,18 @@
 	margin: 0 0 23px;
 	align-items: center;
 	gap: 18px;
+	font-family: var(--accent-font);
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #000000;
+
+	@media #{$tablet-only} {
+		position: relative;
+		font-size: 36px;
+		line-height: 36px;
+	}
 
 	&::before {
 		content: "";
@@ -17,20 +32,34 @@
 		height: 68px;
 		background: url("../../icons/stack.svg#weight-loss");
 
-		@media (min-width: 768px) {
+		@media #{$tablet-only} {
 			width: 272px;
 			height: 272px;
+			position: absolute;
+			right: -6%;
+			top: -25px;
 		}
 
-		@media (min-width: 1280px) {
+		@media #{$desktop-only} {
 			width: 136px;
 			height: 136px;
 		}
 	}
-	font-family: var(--accent-font);
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 37px;
-	text-transform: uppercase;
-	color: #000000;
+}
+
+.weight-loss__description {
+	@media #{$tablet-only} {
+		font-size: 16px;
+		line-height: 24px;
+		width: 58%;
+		margin: 24px 0 24px;
+	}
+
+	@media #{$desktop-only} {
+		width: 80%;
+	}
+}
+
+.weight-loss__link {
+	margin-top: 48px;
 }

@@ -1,3 +1,16 @@
 .programs__container {
 	margin-bottom: 20px;
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+
+	@media #{$not-mobile} {
+		gap: 30px;
+	}
+
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 80px;
+	}
 }

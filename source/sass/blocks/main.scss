@@ -1,5 +1,13 @@
 .main__hero {
 	margin-bottom: 82px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 0;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 82px;
+	}
 }
 
 .main__title {

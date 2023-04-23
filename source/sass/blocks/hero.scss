@@ -2,10 +2,15 @@
 	position: relative;
 	padding: 21px 0;
 
+	@media #{$not-mobile} {
+		padding: 0;
+	}
+
 	&::after {
 		@media #{$mobile-only} {
 			content: "";
 			background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat center;
+			background-color: #525156;
 			background-position: cover;
 			position: absolute;
 			width: 100%;
@@ -17,6 +22,7 @@
 		@media #{$desktop-only} {
 			content: "";
 			background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat center;
+			background-color: #525156;
 			display: block;
 			width: 720px;
 			height: 694px;
@@ -82,6 +88,10 @@
 	position: relative;
 	z-index: 1;
 	margin: 3px auto 3px;
+
+	@media #{$not-mobile} {
+		margin: 0 auto;
+	}
 
 	@media #{$desktop-only} {
 		position: absolute;

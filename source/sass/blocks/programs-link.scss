@@ -10,6 +10,11 @@
 	gap: 15px;
 	align-items: center;
 
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
 	&::after {
 		content: "";
 		display: block;
