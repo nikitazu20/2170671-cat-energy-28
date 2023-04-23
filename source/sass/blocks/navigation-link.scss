@@ -6,4 +6,17 @@
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #000000;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	@media #{$desktop-only} {
+		color: #ffffff;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+	}
 }

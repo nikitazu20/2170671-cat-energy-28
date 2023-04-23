@@ -1,3 +1,13 @@
+.navigation {
+	@media #{$not-mobile} {
+		display: flex;
+	}
+
+	@media #{$desktop-only} {
+		z-index: 1;
+	}
+}
+
 .navigation__list {
 	margin: 0;
 	padding: 0;
@@ -6,12 +16,27 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 46px;
+
+	@media #{$not-mobile} {
+		flex-direction: row;
+		align-items: center;
+		margin: 18px 0 18px;
+		gap: 35px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 69px;
+	}
 }
 
 .navigation__toggle {
 	color: #000000;
 	background-color: #ffffff;
 	border: none;
+
+	@media #{$not-mobile} {
+		display: none;
+	}
 
 	&::before {
 		content: "";

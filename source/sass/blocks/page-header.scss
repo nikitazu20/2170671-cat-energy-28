@@ -1,3 +1,14 @@
+.page-header {
+	display: flex;
+	flex-direction: column;
+
+	@media #{$not-mobile} {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
 .page-header__logo-text {
 	object-fit: cover;
 }

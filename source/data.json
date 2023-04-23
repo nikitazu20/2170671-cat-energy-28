@@ -89,13 +89,13 @@
 			"sizes": [
 				{
 					"viewport": "desktop",
-					"width": 709,
-					"height": 609
+					"width": 552,
+					"height": 499
 				},
 				{
 					"viewport": "tablet",
-					"width": 280,
-					"height": 270
+					"width": 709,
+					"height": 609
 				},
 				{
 					"viewport": "mobile",

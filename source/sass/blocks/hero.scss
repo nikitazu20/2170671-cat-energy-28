@@ -3,13 +3,26 @@
 	padding: 21px 0;
 
 	&::after {
-		content: "";
-		background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat;
-		position: absolute;
-		width: 320px;
-		height: 302px;
-		top: 0;
-		left: 0;
+		@media #{$mobile-only} {
+			content: "";
+			background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat center;
+			background-position: cover;
+			position: absolute;
+			width: 100%;
+			min-height: 302px;
+			top: 0;
+			left: 0;
+		}
+
+		@media #{$desktop-only} {
+			content: "";
+			background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat center;
+			display: block;
+			width: 720px;
+			height: 694px;
+			margin-left: auto;
+			margin-top: -635px;
+		}
 
 		@include bg-image("cat-background");
 	}
@@ -25,6 +38,18 @@
 	position: relative;
 	z-index: 1;
 	margin: 0;
+
+	@media #{$not-mobile} {
+		color: #000000;
+		font-size: 60px;
+		line-height: 60px;
+		text-align: left;
+		margin: 62px 118px 41px;
+	}
+
+	@media #{$desktop-only} {
+		margin: 115px 79px 39px;
+	}
 }
 
 .hero__slogan {
@@ -38,16 +63,52 @@
 	z-index: 1;
 	text-align: center;
 	margin: 29px 0;
+
+	@media #{$not-mobile} {
+		color: #000000;
+		font-size: 20px;
+		line-height: 20px;
+		text-align: left;
+		margin: 41px 118px 49px;
+	}
+
+	@media #{$desktop-only} {
+		margin: 37px 79px;
+	}
 }
 
 .hero__img {
 	display: block;
 	position: relative;
 	z-index: 1;
-	margin: 3px 0 3px;
+	margin: 3px auto 3px;
+
+	@media #{$desktop-only} {
+		position: absolute;
+		left: 39%;
+		top: -7px;
+	}
 }
 
 .hero__button {
 	padding: 7px 44px;
 	min-width: 280px;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 20px;
+		position: absolute;
+		padding: 14px 26px;
+		min-width: 244px;
+		top: 345px;
+		left: 120px;
+		z-index: 1;
+	}
+
+	@media #{$desktop-only} {
+		position: static;
+		padding: 14px 26px;
+		width: 244px;
+		margin: 54px 79px;
+	}
 }
