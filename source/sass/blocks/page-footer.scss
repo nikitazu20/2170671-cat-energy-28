@@ -1,12 +1,24 @@
 .page-footer {
 	background-color: #f2f2f2;
 	padding: 20px 0 20px;
+
+	@media #{$not-mobile} {
+		padding: 14px 0 14px;
+	}
 }
 
 .page-footer__container {
 	display: grid;
 	grid-template-columns: 1fr;
 	place-items: center;
+
+	@media #{$not-mobile} {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.page-footer__logo {
+	justify-self: start;
 }
 
 .page-footer__social-list {
@@ -28,7 +40,7 @@
 .page-footer__social-link {
 	color: #666666;
 
-	&--vk {
+	&--social_vk {
 		&::before {
 			content: "";
 			display: block;
@@ -39,7 +51,7 @@
 		}
 	}
 
-	&--youtube {
+	&--social_youtube {
 		&::before {
 			content: "";
 			display: block;
@@ -50,7 +62,7 @@
 		}
 	}
 
-	&--telegram {
+	&--social_telegram {
 		&::before {
 			content: "";
 			display: block;
@@ -68,6 +80,11 @@
 	width: 100%;
 	padding: 20px 0 20px;
 	color: #666666;
+
+	@media #{$not-mobile} {
+		gap: 28px;
+		justify-content: end;
+	}
 }
 
 .page-footer__academy-logo-img {
