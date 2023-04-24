@@ -1,7 +1,28 @@
+.address {
+	@media #{$desktop-only} {
+		position: relative;
+	}
+}
+
 .address__wrapper {
 	display: flex;
 	align-items: center;
 	padding: 26px 0 26px;
+
+	@media #{$not-mobile} {
+		margin: 0 42px;
+	}
+
+	@media #{$desktop-only} {
+		position: absolute;
+		width: 565px;
+		min-height: 198px;
+		padding: 56px 60px;
+		z-index: 1;
+		background-color: #ffffff;
+		top: 95px;
+		left: 110px;
+	}
 }
 
 .address__title {
@@ -22,4 +43,6 @@
 
 .address__map-img {
 	display: block;
+	width: 100%;
+	position: relative;
 }
