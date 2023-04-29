@@ -19,6 +19,7 @@
 
 .page-footer__logo {
 	justify-self: start;
+	padding: 20px 0 20px;
 }
 
 .page-footer__social-list {
@@ -27,14 +28,6 @@
 	list-style-type: none;
 	display: flex;
 	gap: 24px;
-}
-
-.page-footer__logo {
-	padding: 20px 0 20px;
-}
-
-.page-footer__logo-text {
-	object-fit: cover;
 }
 
 .page-footer__social-link {

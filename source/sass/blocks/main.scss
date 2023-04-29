@@ -12,8 +12,27 @@
 
 .main__title {
 	margin: 29px 0 47px;
+
+	@media #{$not-mobile} {
+		margin: 65px 0 82px;
+	}
 }
 
 .main__page-title {
 	margin: 27px 0 27px;
+}
+
+.main__products {
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 68px;
+		margin-top: 68px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 76px;
+		margin-bottom: 76px;
+	}
 }

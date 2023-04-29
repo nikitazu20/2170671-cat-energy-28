@@ -2,8 +2,24 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(324px, 324px));
+		justify-content: space-between;
+		gap: 60px;
+	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: repeat(auto-fit, minmax(245px, 245px));
+		gap: 80px 63px;
+	}
 }
 
 .products__item {
 	margin: 9px 0 9px;
+
+	@media #{$not-mobile} {
+		margin: 0;
+	}
 }

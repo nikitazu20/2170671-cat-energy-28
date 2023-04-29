@@ -2,9 +2,19 @@
 	padding: 43px 58px;
 	position: relative;
 	min-height: 290px;
-	background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat;
+	background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat center;
 
-	@include bg-image("catalog-background");
+	@media #{$not-mobile} {
+		position: relative;
+		min-height: 200px;
+		padding: 71px 124px;
+	}
+
+	@media #{$desktop-only} {
+		position: relative;
+		max-width: 245px;
+		min-height: 289px;
+	}
 
 	&::before {
 		content: "";
@@ -14,11 +24,25 @@
 		height: 80px;
 		background: url("../../icons/stack.svg#present");
 
-		@media #{$not-mobile} {
+		@media #{$tablet-only} {
+			position: absolute;
 			width: 80px;
 			height: 83px;
+			top: 57px;
+			left: 77px;
+		}
+
+		@media #{$desktop-only} {
+			position: absolute;
+			margin: 0;
+			width: 80px;
+			height: 83px;
+			left: calc(50% - 40px);
+			top: 56px;
 		}
 	}
+
+	@include bg-image("catalog-background");
 }
 
 .present__description {
@@ -30,4 +54,15 @@
 	text-align: center;
 	margin: 0 auto;
 	width: 161px;
+
+	@media #{$tablet-only} {
+		margin-left: auto;
+		margin-right: 0;
+	}
+
+	@media #{$desktop-only} {
+		position: absolute;
+		left: calc(50% - 80px);
+		top: 185px;
+	}
 }
