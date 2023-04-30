@@ -7,4 +7,9 @@
 	border: 1px solid #e7e7e7;
 	min-height: 45px;
 	width: 100%;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }

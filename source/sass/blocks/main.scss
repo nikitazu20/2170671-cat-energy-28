@@ -20,6 +20,16 @@
 
 .main__page-title {
 	margin: 27px 0 27px;
+
+	@media #{$not-mobile} {
+		margin-top: 65px;
+		margin-bottom: 54px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 73px;
+		margin-bottom: 56px;
+	}
 }
 
 .main__products {

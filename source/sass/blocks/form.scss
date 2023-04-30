@@ -6,32 +6,140 @@
 	color: #000000;
 	text-transform: uppercase;
 	margin: 38px 0 38px;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+		margin-top: 54px;
+		margin-bottom: 66px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 56px;
+		margin-bottom: 66px;
+	}
+}
+
+.form__container {
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 80px;
+		margin-top: 63px;
+		margin-bottom: 69px;
+	}
 }
 
 .form__cat-information {
 	margin: 39px 0 46px;
+
+	@media #{$not-mobile} {
+		margin-top: 66px;
+		margin-bottom: 72px;
+	}
+
+	@media #{$desktop-only} {
+		margin: 0;
+	}
 }
 
 .form__nutrition-program {
 	margin: 46px 0 46px;
+
+	@media #{$not-mobile} {
+		margin-top: 71px;
+		margin-bottom: 71px;
+	}
+
+	@media #{$desktop-only} {
+		margin: 0;
+	}
 }
 
 .form__owner {
 	margin: 23px 0 23px;
+
+	@media #{$not-mobile} {
+		margin-top: 71px;
+		margin-bottom: 65px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 69px;
+		margin-bottom: 67px;
+	}
 }
 
 .form__comment {
 	margin: 23px 0 23px;
-	display: block;
-	text-align: center;
+
+	@media #{$not-mobile} {
+		margin: 65px 0 65px;
+	}
+
+	@media #{$desktop-only} {
+		margin: 67px 0 67px;
+	}
 }
 
 .form__additional {
 	margin: 23px 0 34px;
+
+	@media #{$not-mobile} {
+		margin-top: 65px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 67px;
+		margin-bottom: 82px;
+	}
 }
 
 .form__button {
 	margin: 34px 0 21px;
 	min-width: 100%;
 	padding: 7px 44px;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 0px;
+		padding: 13px 13px;
+		min-width: 282px;
+		min-height: 52px;
+		display: block;
+		margin: 0;
+	}
+
+	@media #{$desktop-only} {
+		min-width: 568px;
+	}
+}
+
+.form__warning {
+	text-align: center;
+	margin: 21px auto 32px;
+	display: block;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+
+	@media #{$not-mobile} {
+		margin: 0;
+		justify-self: start;
+		font-size: 16px;
+		line-height: 16px;
+	}
+}
+
+.form__wrapper {
+	@media #{$not-mobile} {
+		align-items: center;
+		display: flex;
+		gap: 64px;
+		margin-bottom: 72px;
+	}
+
+	@media #{$desktop-only} {
+		gap: 84px;
+	}
 }

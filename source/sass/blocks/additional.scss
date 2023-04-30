@@ -5,6 +5,14 @@
 
 .additional__title {
 	margin: 23px 0 34px;
+
+	@media #{$not-mobile} {
+		margin: 65px 0 57px;
+	}
+
+	@media #{$desktop-only} {
+		margin: 67px 0 57px;
+	}
 }
 
 .additional__list {
@@ -14,6 +22,18 @@
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: start;
+		row-gap: 32px;
+	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 104px;
+	}
 }
 
 .additional__item {

@@ -1,6 +1,10 @@
 .nutrition-program {
 	border: none;
 	padding: 0;
+
+	@media #{$not-mobile} {
+		padding: 25px 28px;
+	}
 }
 
 .nutrition-program__list {

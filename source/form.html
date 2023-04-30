@@ -12,73 +12,77 @@
 	<section class="page__centerer page-form">
 		<form class="form" action="https://echo.htmlacademy.ru/" method="post">
 			<h2 class="form__title">
-				Заполните анкету, и мы подберем программу питания для вашего кота
+				Заполните анкету, и мы подберем<br>программу питания для вашего кота
 			</h2>
+			<div class="form__container">
 			<fieldset class="form__cat-information cat-information">
-				<legend class="visually-hidden">
-					Заполните имя, вес и возраст домашнего питомца
-				</legend>
-				<div class="cat-information__wrapper">
-					<label class="cat-information__cat-name cat-information-label" for="cat-name">
-						Имя:<span aria-hidden="true">*</span>
-					</label>
-					<input class="cat-information__cat-name-input field" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
-				</div>
-				<div class="cat-information__wrapper">
-					<label class="cat-information__cat-weight cat-information-label" for="cat-weight">
-						Вес&nbsp;(кг):<span aria-hidden="true">*</span>
-					</label>
-					<input class="cat-information__cat-weight-input field" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
-				</div>
-				<div class="cat-information__wrapper">
-					<label class="cat-information__cat-age cat-information-label" for="cat-age">
-						Возраст&nbsp;(лет):
-					</label>
-					<input class="cat-information__cat-age-input field" type="number" id="cat-age" name="cat-age" placeholder="7">
-				</div>
-			</fieldset>
-			<fieldset class="form__nutrition-program nutrition-program">
-				<legend class="visually-hidden">
-					Выберите программу питания
-				</legend>
-				<ul class="nutrition-program__list">
-					<li class="nutrition-program__item">
-						<input class="nutrition-program__wight-loss-input" type="radio" id="weight-loss" name="nutrition-program" value="weight-loss" checked>
-						<label class="nutrition-program__weight-loss nutrition-program-label" for="weight-loss">
-							Похудение
+					<legend class="visually-hidden">
+						Заполните имя, вес и возраст домашнего питомца
+					</legend>
+					<div class="cat-information__wrapper">
+						<label class="cat-information__cat-name cat-information-label" for="cat-name">
+							Имя:<span aria-hidden="true">*</span>
 						</label>
-					</li>
-					<li class="nutrition-program__item">
-						<input class="nutrition-program__mass-gain" type="radio" id="mass-gain" name="nutrition-program" value="mass-gain">
-						<label class="nutrition-program__mass-gain nutrition-program-label" for="mass-gain">
-							Набор массы
+						<input class="cat-information__cat-name-input field" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
+					</div>
+					<div class="cat-information__wrapper">
+						<label class="cat-information__cat-weight cat-information-label" for="cat-weight">
+							Вес&nbsp;(кг):<span aria-hidden="true">*</span>
 						</label>
-					</li>
-					<li class="nutrition-program__item">
-						<input class="nutrition-program__advise-input" type="radio" id="advise" name="nutrition-program" value="need-advise">
-						<label class="nutrition-program__advise nutrition-program-label" for="advise">
-							Не знаю (Нужен ваш совет)
+						<input class="cat-information__cat-weight-input field" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+					</div>
+					<div class="cat-information__wrapper">
+						<label class="cat-information__cat-age cat-information-label" for="cat-age">
+							Возраст&nbsp;(лет):
 						</label>
-					</li>
-				</ul>
-			</fieldset>
+						<input class="cat-information__cat-age-input field" type="number" id="cat-age" name="cat-age" placeholder="7">
+					</div>
+				</fieldset>
+				<fieldset class="form__nutrition-program nutrition-program">
+					<legend class="visually-hidden">
+						Выберите программу питания
+					</legend>
+					<ul class="nutrition-program__list">
+						<li class="nutrition-program__item">
+							<input class="nutrition-program__wight-loss-input" type="radio" id="weight-loss" name="nutrition-program" value="weight-loss" checked>
+							<label class="nutrition-program__weight-loss nutrition-program-label" for="weight-loss">
+								Похудение
+							</label>
+						</li>
+						<li class="nutrition-program__item">
+							<input class="nutrition-program__mass-gain" type="radio" id="mass-gain" name="nutrition-program" value="mass-gain">
+							<label class="nutrition-program__mass-gain nutrition-program-label" for="mass-gain">
+								Набор массы
+							</label>
+						</li>
+						<li class="nutrition-program__item">
+							<input class="nutrition-program__advise-input" type="radio" id="advise" name="nutrition-program" value="need-advise">
+							<label class="nutrition-program__advise nutrition-program-label" for="advise">
+								Не знаю (Нужен ваш совет)
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+			</div>
 			<fieldset class="form__owner owner">
 				<legend class="owner__title form-subtitle">
 					Контактные данные (владельца кота)
 				</legend>
-				<div class="owner__wrapper">
-					<label class="owner__email" for="owner-email">
-						E-&nbsp;mail:<span aria-hidden="true">*</span>
-					</label>
-					<input class="owner__email-input field" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
-					<span class="owner__email-icon"></span>
-				</div>
-				<div class="owner__wrapper">
-					<label for="owner-tel">
-						Телефон:&nbsp;<span aria-hidden="true">*</span>
-					</label>
-					<input class="owner__tel-input field" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
-					<span class="owner__tel-icon"></span>
+				<div class="owner__container">
+					<div class="owner__wrapper">
+						<label class="owner__email" for="owner-email">
+							E-&nbsp;mail:<span aria-hidden="true">*</span>
+						</label>
+						<input class="owner__email-input field" type="email" id="owner-email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+						<span class="owner__email-icon"></span>
+					</div>
+					<div class="owner__wrapper">
+						<label for="owner-tel">
+							Телефон:&nbsp;<span aria-hidden="true">*</span>
+						</label>
+						<input class="owner__tel-input field" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+						<span class="owner__tel-icon"></span>
+					</div>
 				</div>
 			</fieldset>
 			<div class="form__comment comment">
@@ -118,26 +122,28 @@
 					</li>
 				</ul>
 			</fieldset>
-			<button class="form__button button button--primary" type="submit">
-				Отправить заявку
-			</button>
-			<small class="form__comment" aria-hidden="true">
-				* — Обязательные поля
-			</small>
+			<div class="form__wrapper">
+				<button class="form__button button button--primary" type="submit">
+					Отправить заявку
+				</button>
+				<small class="form__warning" aria-hidden="true">
+					* — Обязательные поля
+				</small>
+			</div>
 		</form>
 	</section>
 	<section class="address">
 		<div class="page__centerer address__wrapper">
 			<h2 class="address__title">
-				Приглашаем к сотрудничеству дилеров!
+				Приглашаем<br> к сотрудничеству<br> дилеров!
 			</h2>
 			<address class="address__number">
-				Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+				Ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург
 			</address>
 		</div>
-			<div class="address__map">
+		<div class="address__map">
 				{% include "./templates/picture.twig" with {name: "map", class: "address__map-img", alt: "Карта."} %}
-			</div>
+		</div>
 	</section>
 </main>
 {% endblock %}
