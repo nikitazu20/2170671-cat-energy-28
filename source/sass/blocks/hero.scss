@@ -24,7 +24,7 @@
 			background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat center;
 			background-color: #525156;
 			display: block;
-			width: 720px;
+			width: 50vw;
 			height: 694px;
 			margin-left: auto;
 			margin-top: -635px;
@@ -42,7 +42,7 @@
 	text-align: center;
 	color: #ffffff;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	margin: 0;
 
 	@media #{$not-mobile} {
@@ -55,6 +55,7 @@
 
 	@media #{$desktop-only} {
 		margin: 115px 79px 39px;
+		max-width: 440px;
 	}
 }
 
@@ -66,7 +67,7 @@
 	color: #ffffff;
 	text-transform: uppercase;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	text-align: center;
 	margin: 29px 0;
 

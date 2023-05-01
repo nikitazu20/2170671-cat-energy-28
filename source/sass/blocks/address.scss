@@ -1,6 +1,7 @@
 .address {
 	@media #{$desktop-only} {
-		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
@@ -14,14 +15,12 @@
 	}
 
 	@media #{$desktop-only} {
-		position: absolute;
 		width: 565px;
 		min-height: 198px;
 		padding: 56px 60px;
 		z-index: 1;
 		background-color: #ffffff;
-		top: 95px;
-		left: 110px;
+		margin: 95px 0 95px;
 	}
 }
 
@@ -41,8 +40,36 @@
 	margin-left: auto;
 }
 
+.address__map {
+	width: 100%;
+
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+	}
+}
+
 .address__map-img {
 	display: block;
+	z-index: 1;
+
+	@media #{$desktop-only} {
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+		height: 100%;
+	}
+}
+
+.address__iframe {
 	width: 100%;
-	position: relative;
+	border: none;
+	display: block;
+
+	@media #{$desktop-only} {
+		height: 100%;
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+	}
 }

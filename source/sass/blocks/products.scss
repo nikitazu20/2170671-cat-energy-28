@@ -5,13 +5,11 @@
 
 	@media #{$not-mobile} {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(324px, 324px));
-		justify-content: space-between;
+		grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
 		gap: 60px;
 	}
 
 	@media #{$desktop-only} {
-		grid-template-columns: repeat(auto-fit, minmax(245px, 245px));
 		gap: 80px 63px;
 	}
 }

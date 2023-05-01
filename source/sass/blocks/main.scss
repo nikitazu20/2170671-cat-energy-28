@@ -11,10 +11,12 @@
 }
 
 .main__title {
-	margin: 29px 0 47px;
+	margin-top: 29px;
+	margin-bottom: 47px;
 
 	@media #{$not-mobile} {
-		margin: 65px 0 82px;
+		margin-top: 65px;
+		margin-bottom: 82px;
 	}
 }
 
