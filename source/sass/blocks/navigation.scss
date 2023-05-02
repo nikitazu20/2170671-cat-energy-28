@@ -1,4 +1,6 @@
 .navigation {
+	position: relative;
+
 	@media #{$not-mobile} {
 		display: flex;
 	}
@@ -8,6 +10,78 @@
 	}
 }
 
+.navigation__container {
+	@media #{$not-mobile} {
+		display: none;
+	}
+}
+
+.navigation--closed .navigation__toggle::before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	mask: url("../../icons/stack.svg#burger") no-repeat center;
+	background: currentColor;
+}
+
+.navigation--opened .navigation__toggle::before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	mask: url("../../icons/stack.svg#cross") no-repeat center;
+	background: currentColor;
+}
+
+@media #{$mobile-only} {
+	.navigation--closed .navigation__item {
+		display: none;
+	}
+}
+
+.navigation--opened .navigation__container {
+	position: absolute;
+	top: 11px;
+	left: -20px;
+	right: 0;
+	min-height: 200px;
+	width: 100vw;
+	z-index: 10;
+	background-color: #ffffff;
+}
+
+.navigation__toggle {
+	color: #000000;
+	background-color: #ffffff;
+	border: none;
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	right: 3%;
+	top: -36px;
+	height: 24px;
+	width: 24px;
+
+	@media #{$not-mobile} {
+		display: none;
+	}
+}
+
+.navigation--nojs .navigation__toggle {
+	display: none;
+}
+
+.navigation--nojs .navigation__container {
+	position: static;
+	width: 100%;
+}
+
+.navigation--nojs .navigation__item {
+	display: block;
+}
+
+
 .navigation__list {
 	margin: 0;
 	padding: 0;
@@ -15,7 +89,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 46px;
+	gap: 0;
 
 	@media #{$not-mobile} {
 		flex-direction: row;
@@ -29,21 +103,42 @@
 	}
 }
 
-.navigation__toggle {
+.navigation__link {
+	font-family: var(--accent-font);
+	text-decoration: none;
+	display: block;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 20px;
+	text-transform: uppercase;
 	color: #000000;
-	background-color: #ffffff;
-	border: none;
+	padding: 22px 20px 24px;
 
 	@media #{$not-mobile} {
-		display: none;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	@media #{$desktop-only} {
+		color: #ffffff;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
 	}
 
 	&::before {
 		content: "";
-		display: block;
-		width: 24px;
-		height: 16px;
-		mask: url("../../icons/stack.svg#burger") no-repeat center;
-		background: currentColor;
+		width: 100vw;
+		height: 1px;
+		background-color: #e6e6e6;
+		position: absolute;
+		top: 0;
+		left: -19px;
+		box-shadow: 0 66px 0 0 #e6e6e6, 0 132px 0 0 #e6e6e6, 0 198px 0 0 #e6e6e6;
+
+		@media #{$not-mobile} {
+			display: none;
+		}
 	}
 }

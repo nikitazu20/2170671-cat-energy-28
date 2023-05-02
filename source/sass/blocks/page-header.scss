@@ -1,12 +1,20 @@
 .page-header {
 	display: flex;
 	flex-direction: column;
+	min-height: 65px;
+	justify-content: center;
 
 	@media #{$not-mobile} {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
+}
+
+.page-header__logo {
+	display: flex;
+	align-items: center;
+	gap: 57px;
 }
 
 .page-header__logo-text {
