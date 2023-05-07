@@ -1,6 +1,6 @@
 .page-footer {
 	background-color: #f2f2f2;
-	padding: 20px 0 20px;
+	padding: 14px 0 20px;
 
 	@media #{$not-mobile} {
 		padding: 14px 0 14px;
@@ -18,8 +18,13 @@
 }
 
 .page-footer__logo {
-	justify-self: start;
+	justify-self: center;
 	padding: 20px 0 20px;
+}
+
+.page-footer__logo-text {
+	display: block;
+	object-fit: cover;
 }
 
 .page-footer__social-list {
@@ -71,7 +76,7 @@
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	padding: 20px 0 20px;
+	padding: 15px 0 20px;
 	color: #666666;
 
 	@media #{$not-mobile} {
@@ -80,7 +85,20 @@
 	}
 }
 
+.page-footer__academy-logo-text {
+	font-family: var(--main-font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	margin: 0;
+	padding: 12px 0;
+}
+
+.page-footer__academy-link {
+	color: #666666;
+}
+
 .page-footer__academy-logo-img {
 	object-fit: cover;
-	color: #666666;
+	fill: currentColor;
 }

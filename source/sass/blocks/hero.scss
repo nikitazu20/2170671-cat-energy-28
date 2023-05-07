@@ -1,6 +1,6 @@
 .hero {
 	position: relative;
-	padding: 21px 0;
+	padding: 25px 0;
 
 	@media #{$not-mobile} {
 		padding: 0;
@@ -104,8 +104,11 @@
 }
 
 .hero__button {
-	padding: 7px 44px;
 	min-width: 280px;
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	@media #{$not-mobile} {
 		font-size: 20px;

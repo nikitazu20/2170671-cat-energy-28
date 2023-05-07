@@ -88,40 +88,40 @@
 				</p>
 			</div>
 			<dl class="example__list">
-					<div class="example__item">
-						<dt class="example__item-description">
+				<div class="example__item">
+					<dt class="example__item-description">
 							Снижение<br>веса
-						</dt>
-						<dd class="example__number">
-							5 Кг
-						</dd>
-					</div>
-					<div class="example__item">
-						<dt class="example__item-description">
+					</dt>
+					<dd class="example__number">
+							5&nbsp;Кг
+					</dd>
+				</div>
+				<div class="example__item example__item--days">
+					<dt class="example__item-description example__item-description--days">
 							Затрачено<br>времени
-						</dt>
-						<dd class="example__number">
-							60 дней
-						</dd>
-					</div>
+					</dt>
+					<dd class="example__number example__number--days">
+							60&nbsp;дней
+					</dd>
+				</div>
 				<div class="example__item example__item--price">
 					<dt class="example__item-description example__item-description--price">
-						Затраты на питание
+							Затраты на питание: &#32;
 					</dt>
 					<dd class="example__number example__number--price">
-						15 000 РУБ.
+						&#32;15&nbsp;000&nbsp;РУБ.
 					</dd>
 				</div>
 			</dl>
-			<div class="example__slider">
-				<div class="slider">
-					{% include "./templates/picture.twig" with {name: "cat-before", class: "slider__img", alt: "Толстый кот"} %}
-					{% include "./templates/picture.twig" with {name: "cat-after", class: "slider__img", alt: "Худой кот"} %}
-					<button class="slider__button" type="button">
-						<span class="visually-hidden">
-							Переключатель толстого/худого кота
-						</span>
-					</button>
+			<div class="example__slider slider">
+				<div class="slider" style="--curtain-place: 0.5;">
+						{% include "./templates/picture.twig" with {name: "cat-before", class: "example__image slider__image slider__image--state_before", alt: "Толстый кот"} %}
+						<div class="slider__curtain">
+							<button class="slider__thumb" type="button">
+								<span class="visually-hidden">Ползунок слайдера</span>
+							</button>
+						</div>
+						{% include "./templates/picture.twig" with {name: "cat-after", class: "example__image slider__image slider__image--state_after", alt: "Худой кот"} %}
 				</div>
 			</div>
 		</div>

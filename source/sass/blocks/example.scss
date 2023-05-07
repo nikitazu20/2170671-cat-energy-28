@@ -1,16 +1,30 @@
 .example {
-	padding: 22px 0 40px;
 	background-color: #eaeaea;
+	padding: 22px 0 45px;
+	position: relative;
+	display: grid;
+	gap: 20px;
+
+	@media (min-width: 768px) {
+		--bg-top-shift: calc(100% - 462px);
+		gap: 100px;
+	}
+
+	@media (min-width: 1280px) {
+		--bg-top-shift: 236px;
+		grid-template-columns: auto 560px;
+		gap: 224px;
+	}
+}
+
+.example__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px 32px;
 }
 
 .example__description {
 	margin: 20px 0 20px;
-}
-
-.example__list-wrapper {
-	display: flex;
-	margin-bottom: 20px;
-	justify-content: space-between;
 }
 
 .example__title {
@@ -20,13 +34,23 @@
 .example__item {
 	display: flex;
 	flex-direction: column;
-	place-items: center;
-}
+	place-items: start;
 
-.example__item--price {
-	display: flex;
-	flex-direction: row;
-	margin-left: auto;
+	max-width: 124px;
+
+	&--days {
+		justify-self: end;
+	}
+
+	&--price {
+		flex-direction: row;
+		align-items: center;
+		grid-column: span 2;
+		max-width: 220px;
+		justify-content: center;
+		margin: 0 auto;
+		gap: 5px;
+	}
 }
 
 .example__number {
@@ -36,14 +60,55 @@
 	font-size: 24px;
 	color: #000000;
 	line-height: 24px;
-	margin: 0;
-	padding: 0;
+	padding: 15px 42px;
+	margin: 0 0 6px 0;
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	min-height: 56px;
+
+	&--days {
+		padding: 15px 22px 17px	21px;
+		min-height: 57px;
+	}
+
+	&--price {
+		border: none;
+		font-family: var(--accent-font);
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #000000;
+		margin: 0;
+		padding: 0;
+		min-height: 0;
+		gap: 5px;
+	}
 }
 
 .example__item-description {
 	font-size: 12px;
 	line-height: 12px;
 	text-align: center;
-	margin: 20px 0;
 	order: 1;
+	align-self: center;
+	margin-top: -17px;
+	background-color: #eaeaea;
+	padding: 0 17px;
+
+	&--price {
+		font-family: var(--accent-font);
+		order: 0;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #000000;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.example__image {
+	display: block;
 }

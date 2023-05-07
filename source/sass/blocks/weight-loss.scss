@@ -9,9 +9,9 @@
 
 .weight-loss__title {
 	display: flex;
-	margin: 0 0 23px;
+	margin: -6px 0 18px;
 	align-items: center;
-	gap: 18px;
+	gap: 8px;
 	font-family: var(--accent-font);
 	font-weight: 400;
 	font-size: 24px;
@@ -31,6 +31,8 @@
 		width: 68px;
 		height: 68px;
 		background: url("../../icons/stack.svg#weight-loss");
+		margin-left: -6px;
+		margin-top: -11px;
 
 		@media #{$tablet-only} {
 			width: 272px;
@@ -48,6 +50,9 @@
 }
 
 .weight-loss__description {
+	margin-top: 16px;
+	margin-bottom: 22px;
+
 	@media #{$tablet-only} {
 		font-size: 16px;
 		line-height: 24px;
@@ -61,5 +66,5 @@
 }
 
 .weight-loss__link {
-	margin-top: 48px;
+	margin-top: 40px;
 }

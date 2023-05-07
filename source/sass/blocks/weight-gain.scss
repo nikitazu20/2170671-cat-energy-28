@@ -10,7 +10,7 @@
 .weight-gain__title {
 	display: flex;
 	gap: 9px;
-	margin: 0 0 23px;
+	margin: -10px 0 0;
 	align-items: center;
 	font-family: var(--accent-font);
 	font-weight: 400;
@@ -35,6 +35,7 @@
 		width: 68px;
 		height: 68px;
 		background: url("../../icons/stack.svg#mass-gain");
+		margin-left: -7px;
 
 		@media #{$tablet-only} {
 			width: 272px;
@@ -65,5 +66,5 @@
 }
 
 .weight-gain__link {
-	margin-top: 48px;
+	margin-top: 37px;
 }
