@@ -11,7 +11,8 @@
 	padding: 26px 0 26px;
 
 	@media #{$not-mobile} {
-		margin: 0 42px;
+		padding: 56px 42px;
+		margin: 0;
 	}
 
 	@media #{$desktop-only} {
@@ -32,16 +33,40 @@
 	line-height: 20px;
 	color: #000000;
 	margin: 0;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 26px;
+	}
 }
 
 .address__number {
 	line-height: 20px;
 	font-style: normal;
 	margin-left: auto;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: end;
+	}
+}
+
+.address__number-city {
+	@media #{$not-mobile} {
+		display: block;
+		margin-top: 19px;
+	}
 }
 
 .address__map {
 	width: 100%;
+
+	@media #{$not-mobile} {
+		height: 100%;
+	}
 
 	@media #{$desktop-only} {
 		display: grid;

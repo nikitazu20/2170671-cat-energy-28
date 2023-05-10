@@ -39,7 +39,7 @@
 			height: 272px;
 			position: absolute;
 			right: -6%;
-			top: -25px;
+			top: -13px;
 		}
 
 		@media #{$desktop-only} {
@@ -67,4 +67,8 @@
 
 .weight-loss__link {
 	margin-top: 40px;
+
+	@media #{$not-mobile} {
+		margin-top: 55px;
+	}
 }

@@ -23,6 +23,7 @@
 		position: relative;
 		font-size: 36px;
 		line-height: 36px;
+		margin: 3px 0;
 	}
 
 	@media #{$desktop-only} {
@@ -67,4 +68,8 @@
 
 .weight-gain__link {
 	margin-top: 37px;
+
+	@media #{$not-mobile} {
+		margin-top: 52px;
+	}
 }

@@ -2,7 +2,7 @@
 	margin-bottom: 52px;
 
 	@media #{$tablet-only} {
-		margin-bottom: 90px;
+		margin-bottom: 28px;
 	}
 
 	@media #{$desktop-only} {
@@ -13,16 +13,8 @@
 .advantages__title {
 	margin: 20px 0 40px;
 
-	@media #{$tablet-only} {
-		font-size: 60px;
-		line-height: 60px;
-		margin: 32px 0 32px;
-	}
-
-	@media #{$desktop-only} {
-		font-size: 60px;
-		line-height: 60px;
-		margin: 32px 0 32px;
+	@media #{$not-mobile} {
+		margin: 50px 0 72px;
 	}
 }
 
@@ -53,11 +45,45 @@
 	gap: 20px;
 
 	@media #{$tablet-only} {
-		width: 230px;
 		flex-direction: column;
 		font-size: 16px;
 		line-height: 24px;
 		gap: 31px;
+		padding: 0 0 97px;
+		align-items: start;
+
+		&--number_one {
+			width: 230px;
+			background-image: url("../../icons/stack.svg#one");
+			background-size: 70px 227px;
+			background-repeat: no-repeat;
+			background-position: top 0 right 34px;
+		}
+
+		&--number_two {
+			width: 246px;
+			background-image: url("../../icons/stack.svg#two");
+			background-size: 113px 225px;
+			background-repeat: no-repeat;
+			background-position: top 0 right 10px;
+		}
+
+		&--number_three {
+			width: 247px;
+			background-image: url("../../icons/stack.svg#three");
+			background-size: 109px 227px;
+			background-repeat: no-repeat;
+			background-position: top 0 right 12px;
+		}
+
+		&--number_four {
+			margin-left: -14px;
+			width: 249px;
+			background-image: url("../../icons/stack.svg#four");
+			background-size: 121px 227px;
+			background-repeat: no-repeat;
+			background-position: top 0 right 2px;
+		}
 	}
 
 	@media #{$desktop-only} {

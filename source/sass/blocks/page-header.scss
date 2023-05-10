@@ -8,6 +8,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		min-height: 51px;
 	}
 }
 
@@ -15,10 +16,19 @@
 	display: flex;
 	align-items: center;
 	gap: 57px;
+
+	@media #{$not-mobile} {
+		gap: 12px;
+	}
 }
 
 .page-header__logo-text {
 	object-fit: cover;
+
+	@media #{$not-mobile} {
+		margin: 2px 0;
+		display: block;
+	}
 }
 
 .page-header__logo-image {

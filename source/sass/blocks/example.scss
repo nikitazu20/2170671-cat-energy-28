@@ -5,13 +5,13 @@
 	display: grid;
 	gap: 20px;
 
-	@media (min-width: 768px) {
-		--bg-top-shift: calc(100% - 462px);
+	@media #{$not-mobile} {
+		background: linear-gradient(to bottom, #ffffff 598px, #eaeaea 598px);
 		gap: 100px;
+		padding-bottom: 101px;
 	}
 
-	@media (min-width: 1280px) {
-		--bg-top-shift: 236px;
+	@media #{$desktop-only} {
 		grid-template-columns: auto 560px;
 		gap: 224px;
 	}
@@ -21,14 +21,30 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px 32px;
+
+	@media #{$not-mobile} {
+		grid-template-columns: 1fr 1fr 2fr;
+		margin-bottom: 99px;
+	}
 }
 
 .example__description {
 	margin: 20px 0 20px;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 54px;
+	}
 }
 
 .example__title {
 	margin: 0 0 40px;
+
+	@media #{$not-mobile} {
+		margin: 0 0 63px;
+	}
 }
 
 .example__item {
@@ -40,6 +56,10 @@
 
 	&--days {
 		justify-self: end;
+
+		@media #{$not-mobile} {
+			margin-left: 48px;
+		}
 	}
 
 	&--price {
@@ -50,6 +70,12 @@
 		justify-content: center;
 		margin: 0 auto;
 		gap: 5px;
+
+		@media #{$not-mobile} {
+			grid-column: 4 / 5;
+			flex-direction: column;
+			gap: 9px;
+		}
 	}
 }
 
@@ -66,9 +92,20 @@
 	border-radius: 3px;
 	min-height: 56px;
 
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 37px;
+		padding: 15px 57px 20px;
+	}
+
 	&--days {
 		padding: 15px 22px 17px	21px;
 		min-height: 57px;
+
+		@media #{$not-mobile} {
+			padding: 15px 30px 20px;
+		}
 	}
 
 	&--price {
@@ -83,6 +120,13 @@
 		padding: 0;
 		min-height: 0;
 		gap: 5px;
+
+		@media #{$not-mobile} {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 20px;
+			align-self: end;
+		}
 	}
 }
 
@@ -92,9 +136,21 @@
 	text-align: center;
 	order: 1;
 	align-self: center;
+	text-transform: lowercase;
 	margin-top: -17px;
 	background-color: #eaeaea;
 	padding: 0 17px;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 14px;
+		background-color: #ffffff;
+		max-width: 142px;
+		min-width: 126px;
+		margin-left: 38px;
+		padding: 0;
+	}
 
 	&--price {
 		font-family: var(--accent-font);
@@ -106,6 +162,13 @@
 		color: #000000;
 		margin: 0;
 		padding: 0;
+
+		@media #{$not-mobile} {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 20px;
+			min-width: 174px;
+		}
 	}
 }
 

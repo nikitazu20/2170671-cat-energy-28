@@ -3,7 +3,7 @@
 	padding: 14px 0 20px;
 
 	@media #{$not-mobile} {
-		padding: 14px 0 14px;
+		padding: 75px 0;
 	}
 }
 
@@ -20,6 +20,10 @@
 .page-footer__logo {
 	justify-self: center;
 	padding: 20px 0 20px;
+
+	@media #{$not-mobile} {
+		justify-self: start;
+	}
 }
 
 .page-footer__logo-text {
