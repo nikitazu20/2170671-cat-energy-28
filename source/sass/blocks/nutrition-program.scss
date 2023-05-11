@@ -1,9 +1,20 @@
 .nutrition-program {
+	position: relative;
 	border: none;
-	padding: 0;
+	padding: 0 0 19px;
 
 	@media #{$not-mobile} {
 		padding: 25px 28px;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: -18px;
+		bottom: 0;
+		height: 1px;
+		width: 100vw;
+		background-color: #d9d9d9;
 	}
 }
 
@@ -19,4 +30,40 @@
 .nutrition-program__item {
 	display: flex;
 	gap: 15px;
+	align-items: center;
+}
+
+.nutrition-program__wight-loss-input,
+.nutrition-program__mass-gain-input,
+.nutrition-program__advise-input {
+	display: none;
+}
+
+.nutrition-program__radio {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #cdcdcd;
+	border-radius: 50%;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		display: block;
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		background-color: #68b738;
+		opacity: 0;
+	}
+}
+
+.nutrition-program__wight-loss-input:checked + .nutrition-program__radio::before,
+.nutrition-program__mass-gain-input:checked + .nutrition-program__radio::before,
+.nutrition-program__advise-input:checked + .nutrition-program__radio::before {
+	opacity: 1;
 }

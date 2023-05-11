@@ -1,12 +1,23 @@
 .cat-information {
+	position: relative;
 	border: 0;
 	display: flex;
-	padding: 0;
+	padding: 0 0 22px;
 	flex-direction: column;
 	gap: 14px;
 
 	@media #{$not-mobile} {
 		gap: 20px;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: -18px;
+		bottom: 0;
+		height: 1px;
+		width: 100vw;
+		background-color: #d9d9d9;
 	}
 }
 
@@ -14,4 +25,16 @@
 	display: flex;
 	gap: 13px;
 	align-items: center;
+}
+
+.cat-information__cat-name-input {
+	padding: 13px 20px;
+}
+
+.cat-information__cat-weight-input {
+	padding: 13px 20px;
+}
+
+.cat-information__cat-age-input {
+	padding: 13px 20px;
 }

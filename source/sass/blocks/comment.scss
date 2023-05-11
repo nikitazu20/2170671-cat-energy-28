@@ -1,7 +1,10 @@
 .comment__title {
+	position: relative;
+	width: 143px;
 	margin: 23px 0 37px;
 	text-align: left;
 	display: block;
+	background-color: #ffffff;
 
 	@media #{$not-mobile} {
 		font-size: 16px;
@@ -9,4 +12,21 @@
 		margin-top: 65px;
 		margin-bottom: 76px;
 	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 1px;
+		right: 0;
+		top: 13px;
+		width: 100vw;
+		height: 2px;
+		background-color: #68b738;
+		box-shadow: 100vw 0 0 #68b738;
+		z-index: -1;
+	}
+}
+
+.comment__text {
+	padding: 8px 14px 13px;
 }

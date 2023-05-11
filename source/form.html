@@ -44,19 +44,22 @@
 					</legend>
 					<ul class="nutrition-program__list">
 						<li class="nutrition-program__item">
-							<input class="nutrition-program__wight-loss-input" type="radio" id="weight-loss" name="nutrition-program" value="weight-loss" checked>
+							<input class="nutrition-program__wight-loss-input visually-hidden" type="radio" id="weight-loss" name="nutrition-program" value="weight-loss" checked>
+							<span class="nutrition-program__radio"></span>
 							<label class="nutrition-program__weight-loss nutrition-program-label" for="weight-loss">
 								Похудение
 							</label>
 						</li>
 						<li class="nutrition-program__item">
-							<input class="nutrition-program__mass-gain" type="radio" id="mass-gain" name="nutrition-program" value="mass-gain">
+							<input class="nutrition-program__mass-gain-input visually-hidden" type="radio" id="mass-gain" name="nutrition-program" value="mass-gain">
+							<span class="nutrition-program__radio"></span>
 							<label class="nutrition-program__mass-gain nutrition-program-label" for="mass-gain">
 								Набор массы
 							</label>
 						</li>
 						<li class="nutrition-program__item">
-							<input class="nutrition-program__advise-input" type="radio" id="advise" name="nutrition-program" value="need-advise">
+							<input class="nutrition-program__advise-input visually-hidden" type="radio" id="advise" name="nutrition-program" value="need-advise">
+							<span class="nutrition-program__radio"></span>
 							<label class="nutrition-program__advise nutrition-program-label" for="advise">
 								Не знаю (Нужен ваш совет)
 							</label>
@@ -77,7 +80,7 @@
 						<span class="owner__email-icon"></span>
 					</div>
 					<div class="owner__wrapper">
-						<label for="owner-tel">
+						<label class="owner__tel" for="owner-tel">
 							Телефон:&nbsp;<span aria-hidden="true">*</span>
 						</label>
 						<input class="owner__tel-input field" type="tel" id="owner-tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
@@ -89,7 +92,7 @@
 				<label class="comment__title form-subtitle" for="comment">
 					Комментарий
 				</label>
-				<textarea class="comment__text field" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+				<textarea class="comment__text field" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
 			</div>
 			<fieldset class="form__additional additional">
 				<legend class="additional__title form-subtitle">
@@ -98,24 +101,28 @@
 				<ul class="additional__list">
 					<li class="additional__item">
 						<input class="additional__sweetener-input" type="checkbox" id="sweetener" name="additiona-products" value="sweetener" checked>
+						<span class="additional__checkbox"></span>
 						<label class="additional__sweetener additional-label" for="sweetener">
 							Сахарозаменитель
 						</label>
 					</li>
 					<li class="additional__item">
 						<input class="additional__water-input" type="checkbox" id="water" name="additiona-products" value="water">
+						<span class="additional__checkbox"></span>
 						<label class="additional__water additional-label" for="water">
 							Питьевая вода
 						</label>
 					</li>
 					<li class="additional__item">
 						<input class="additional__milk-input" type="checkbox" id="milk" name="additiona-products" value="milk">
+						<span class="additional__checkbox"></span>
 						<label class="additional__milk additional-label" for="milk">
 							Молоко
 						</label>
 					</li>
 					<li class="additional__item">
 						<input class="additional__vitamins-input" type="checkbox" id="vitamins" name="additiona-products" value="vitamins">
+						<span class="additional__checkbox"></span>
 						<label class="additional__vitamins additional-label" for="vitamins">
 							Витамины
 						</label>
@@ -139,12 +146,15 @@
 					Приглашаем<br> к сотрудничеству<br> дилеров!
 				</h2>
 				<address class="address__number">
-					Ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург
+					Ул. Большая <br> Конюшенная, д. 19/8 <br> <span class="address__number-city"> Санкт-Петербург</span>
 				</address>
 			</div>
 		</div>
 		<div class="address__map">
+			<noscript>
 				{% include "./templates/picture.twig" with {name: "map", class: "address__map-img", alt: "Карта."} %}
+			</noscript>
+			<iframe class="address__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6271089845297!2d30.32182431045305!3d59.9383295192359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682928099402!5m2!1sru!2sru" width="320" height="368" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</section>
 </main>

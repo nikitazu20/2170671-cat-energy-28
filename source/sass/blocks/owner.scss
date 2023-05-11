@@ -11,7 +11,11 @@
 }
 
 .owner__title {
-	margin: 25px 0 36px;
+	position: relative;
+	width: 204px;
+	margin: 24px -3px 34px;
+	background-color: #ffffff;
+
 
 	@media #{$not-mobile} {
 		margin-top: 65px;
@@ -21,12 +25,25 @@
 	@media #{$desktop-only} {
 		margin-top: 67px;
 	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 1px;
+		right: 0;
+		top: 15px;
+		width: 100vw;
+		height: 2px;
+		background-color: #68b738;
+		box-shadow: 100vw 0 0 #68b738;
+		z-index: -1;
+	}
 }
 
 .owner__container {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 12px;
 
 	@media #{$desktop-only} {
 		display: grid;
@@ -37,7 +54,7 @@
 
 .owner__wrapper {
 	display: flex;
-	gap: 10px;
+	gap: 6px;
 	align-items: center;
 
 	@media #{$not-mobile} {
@@ -45,8 +62,29 @@
 	}
 }
 
+.owner__email {
+	font-family: var(--accent-font);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+}
+
 .owner__email-input {
 	position: relative;
+	padding: 14px 35px 14px 15px;
+}
+
+.owner__tel {
+	font-family: var(--accent-font);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.owner__tel-input {
+	padding: 14px 35px 14px 15px;
 }
 
 .owner__email-icon {

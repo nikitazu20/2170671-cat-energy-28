@@ -31,7 +31,7 @@
 }
 
 .form__cat-information {
-	margin: 39px 0 46px;
+	margin: 39px 0 0;
 
 	@media #{$not-mobile} {
 		margin-top: 66px;
@@ -44,7 +44,7 @@
 }
 
 .form__nutrition-program {
-	margin: 46px 0 46px;
+	margin: 22px 0 27px;
 
 	@media #{$not-mobile} {
 		margin-top: 71px;
@@ -71,7 +71,7 @@
 }
 
 .form__comment {
-	margin: 23px 0 23px;
+	margin: 21px 0;
 
 	@media #{$not-mobile} {
 		margin: 65px 0 65px;
@@ -83,7 +83,7 @@
 }
 
 .form__additional {
-	margin: 23px 0 34px;
+	margin: 20px 0 34px;
 
 	@media #{$not-mobile} {
 		margin-top: 65px;
@@ -96,9 +96,12 @@
 }
 
 .form__button {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
 	margin: 34px 0 21px;
 	min-width: 100%;
-	padding: 7px 44px;
+	padding: 10px 5px;
 
 	@media #{$not-mobile} {
 		font-size: 20px;
