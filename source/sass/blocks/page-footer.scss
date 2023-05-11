@@ -5,6 +5,10 @@
 	@media #{$not-mobile} {
 		padding: 75px 0;
 	}
+
+	@media #{$desktop-only} {
+		padding: 60px 0;
+	}
 }
 
 .page-footer__container {

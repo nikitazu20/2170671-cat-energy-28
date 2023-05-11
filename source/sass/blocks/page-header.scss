@@ -9,6 +9,16 @@
 		justify-content: space-between;
 		align-items: center;
 		min-height: 51px;
+
+		@media #{$desktop-only} {
+			padding: 44px 0 0;
+		}
+	}
+}
+
+.page-header__navigation {
+	@media #{$desktop-only} {
+		padding: 10px 0;
 	}
 }
 

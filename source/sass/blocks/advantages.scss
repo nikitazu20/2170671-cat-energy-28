@@ -6,7 +6,7 @@
 	}
 
 	@media #{$desktop-only} {
-		margin: 69px 0 69px;
+		margin: 69px 0 8px;
 	}
 }
 
@@ -14,7 +14,7 @@
 	margin: 20px 0 40px;
 
 	@media #{$not-mobile} {
-		margin: 50px 0 72px;
+		margin: 50px 0 75px;
 	}
 }
 
@@ -35,7 +35,7 @@
 
 	@media #{$desktop-only} {
 		flex-direction: row;
-		gap: 94px;
+		gap: 74px;
 	}
 }
 
@@ -44,7 +44,7 @@
 	align-items: center;
 	gap: 20px;
 
-	@media #{$tablet-only} {
+	@media #{$not-mobile} {
 		flex-direction: column;
 		font-size: 16px;
 		line-height: 24px;
@@ -87,11 +87,21 @@
 	}
 
 	@media #{$desktop-only} {
-		width: 230px;
+		width: 252px;
 		font-size: 16px;
 		line-height: 24px;
 		flex-direction: column;
 		gap: 31px;
+
+		&--number_one {
+			background-position: top 0 right 50px;
+		}
+
+		&--number_four {
+			max-width: 250px;
+			margin-left: -3px;
+			padding: 0 3px;
+		}
 	}
 
 	&--icon_leaf {

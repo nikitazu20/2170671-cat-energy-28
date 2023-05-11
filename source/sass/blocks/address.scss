@@ -18,7 +18,7 @@
 	@media #{$desktop-only} {
 		width: 565px;
 		min-height: 198px;
-		padding: 56px 60px;
+		padding: 56px 79px;
 		z-index: 1;
 		background-color: #ffffff;
 		margin: 95px 0 95px;
@@ -51,6 +51,10 @@
 		font-size: 16px;
 		line-height: 20px;
 		text-align: end;
+	}
+
+	@media #{$desktop-only} {
+		text-align: left;
 	}
 }
 

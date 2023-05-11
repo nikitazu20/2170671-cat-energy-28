@@ -5,6 +5,10 @@
 	@media #{$tablet-only} {
 		padding: 77px 62px 53px 52px;
 	}
+
+	@media #{$desktop-only} {
+		padding: 55px 52px;
+	}
 }
 
 .weight-loss__title {
@@ -23,6 +27,13 @@
 		position: relative;
 		font-size: 36px;
 		line-height: 36px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 36px;
+		line-height: 36px;
+		margin: -18px 0 26px;
+		gap: 44px;
 	}
 
 	&::before {
@@ -45,6 +56,8 @@
 		@media #{$desktop-only} {
 			width: 136px;
 			height: 136px;
+			margin-left: -19px;
+			margin-top: -12px;
 		}
 	}
 }
@@ -61,7 +74,8 @@
 	}
 
 	@media #{$desktop-only} {
-		width: 80%;
+		font-size: 16px;
+		line-height: 24px;
 	}
 }
 
@@ -70,5 +84,9 @@
 
 	@media #{$not-mobile} {
 		margin-top: 55px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 28px;
 	}
 }
