@@ -20,7 +20,7 @@
 	@media #{$not-mobile} {
 		width: 558px;
 		margin-top: 65px;
-		margin-bottom: 76px;
+		margin-bottom: 65px;
 
 		&::after {
 			content: "";
@@ -36,6 +36,18 @@
 
 	@media #{$desktop-only} {
 		margin-top: 67px;
+		margin-bottom: 77px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			background-color: #ffffff;
+			width: 35px;
+			height: 40px;
+			left: -36px;
+			top: 0;
+		}
 	}
 
 	&::before {
@@ -52,7 +64,7 @@
 
 		@media #{$not-mobile} {
 			top: 24px;
-			left: -100px;
+			left: -1500px;
 		}
 	}
 }

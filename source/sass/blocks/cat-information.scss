@@ -10,6 +10,10 @@
 		gap: 20px;
 	}
 
+	@media #{$desktop-only} {
+		padding: 0;
+	}
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -33,6 +37,10 @@
 
 .cat-information__cat-name-input {
 	padding: 11px 19px;
+
+	@media #{$desktop-only} {
+		padding: 10px 19px;
+	}
 }
 
 .cat-information__cat-weight-input {

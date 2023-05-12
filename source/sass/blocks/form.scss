@@ -27,7 +27,7 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 80px;
 		margin-top: 63px;
-		margin-bottom: 69px;
+		margin-bottom: 65px;
 	}
 }
 
@@ -68,7 +68,7 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-top: 69px;
+		margin-top: 65px;
 		margin-bottom: 67px;
 	}
 }
@@ -81,7 +81,7 @@
 	}
 
 	@media #{$desktop-only} {
-		margin: 67px 0 67px;
+		margin: 67px 0 63px;
 	}
 }
 
@@ -93,8 +93,8 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-top: 67px;
-		margin-bottom: 82px;
+		margin-top: 60px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -148,5 +148,6 @@
 
 	@media #{$desktop-only} {
 		gap: 84px;
+		margin-bottom: 83px;
 	}
 }
