@@ -23,7 +23,7 @@
 
 	@media #{$not-mobile} {
 		margin-top: 65px;
-		margin-bottom: 54px;
+		margin-bottom: 49px;
 	}
 
 	@media #{$desktop-only} {
@@ -44,5 +44,11 @@
 	@media #{$desktop-only} {
 		margin-top: 76px;
 		margin-bottom: 76px;
+	}
+}
+
+.main__container {
+	@media #{$tablet-only} {
+		padding: 0 38px;
 	}
 }

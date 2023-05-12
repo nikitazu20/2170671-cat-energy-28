@@ -18,8 +18,20 @@
 
 
 	@media #{$not-mobile} {
+		width: 558px;
 		margin-top: 65px;
 		margin-bottom: 76px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			background-color: #ffffff;
+			width: 33px;
+			height: 40px;
+			left: -36px;
+			top: 0;
+		}
 	}
 
 	@media #{$desktop-only} {
@@ -37,6 +49,11 @@
 		background-color: #68b738;
 		box-shadow: 100vw 0 0 #68b738;
 		z-index: -1;
+
+		@media #{$not-mobile} {
+			top: 24px;
+			left: -100px;
+		}
 	}
 }
 
@@ -44,6 +61,10 @@
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+
+	@media #{$not-mobile} {
+		gap: 19px;
+	}
 
 	@media #{$desktop-only} {
 		display: grid;
@@ -68,11 +89,21 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+	}
 }
 
 .owner__email-input {
 	position: relative;
 	padding: 14px 35px 14px 15px;
+
+	@media #{$not-mobile} {
+		padding: 11px 35px 11px 19px;
+	}
 }
 
 .owner__tel {
@@ -81,10 +112,20 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+	}
 }
 
 .owner__tel-input {
 	padding: 14px 35px 14px 15px;
+
+	@media #{$not-mobile} {
+		padding: 11px 35px 11px 16px;
+	}
 }
 
 .owner__email-icon {
@@ -97,7 +138,7 @@
 	left: 83%;
 
 	@media #{$not-mobile} {
-		left: 91%;
+		left: 86%;
 	}
 
 	@media #{$desktop-only} {
@@ -115,7 +156,7 @@
 	left: 83%;
 
 	@media #{$not-mobile} {
-		left: 91%;
+		left: 86%;
 	}
 
 	@media #{$desktop-only} {

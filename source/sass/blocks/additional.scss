@@ -10,7 +10,19 @@
 	position: relative;
 
 	@media #{$not-mobile} {
+		width: 253px;
 		margin: 65px 0 57px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			background-color: #ffffff;
+			width: 38px;
+			height: 40px;
+			left: -38px;
+			top: 0;
+		}
 	}
 
 	@media #{$desktop-only} {
@@ -28,6 +40,11 @@
 		background-color: #68b738;
 		box-shadow: 100vw 0 0 #68b738;
 		z-index: -1;
+
+		@media #{$not-mobile} {
+			top: 23px;
+			left: -100px;
+		}
 	}
 }
 
@@ -43,7 +60,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		justify-content: start;
-		row-gap: 32px;
+		gap: 32px 55px;
 	}
 
 	@media #{$desktop-only} {
@@ -56,6 +73,10 @@
 	display: flex;
 	gap: 16px;
 	align-items: center;
+
+	@media #{$not-mobile} {
+		gap: 22px;
+	}
 }
 
 .additional__sweetener-input,
@@ -72,6 +93,11 @@
 	position: relative;
 	border: 1px solid #cdcdcd;
 
+	@media #{$not-mobile} {
+		width: 40px;
+		height: 40px;
+	}
+
 	&::before {
 		content: "";
 		width: 30px;
@@ -80,6 +106,11 @@
 		mask: url("../../icons/stack.svg#tick") no-repeat center;
 		background: #68b738;
 		opacity: 0;
+
+		@media #{$not-mobile} {
+			width: 40px;
+			height: 40px;
+		}
 	}
 }
 
