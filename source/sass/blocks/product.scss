@@ -1,5 +1,4 @@
 .product {
-	background: linear-gradient(to bottom, #ffffff 89px, #eaeaea 89px);
 	position: relative;
 	padding: 14px 0 14px;
 	display: grid;
@@ -12,6 +11,7 @@
 
 
 	@media #{$not-mobile} {
+		background: linear-gradient(to bottom, #ffffff 89px, #eaeaea 89px);
 		margin: 0;
 		padding: 40px 36px 39px 36px;
 		width: 324px;
@@ -135,16 +135,16 @@
 	@media #{$not-mobile} {
 		font-size: 16px;
 		line-height: 16px;
-	}
 
-	&::after {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 1px;
-		background-color: #cdcdcd;
-		right: 0;
-		top: 25px;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: #cdcdcd;
+			right: 0;
+			top: 25px;
+		}
 	}
 }
 

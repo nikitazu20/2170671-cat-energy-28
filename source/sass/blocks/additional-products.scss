@@ -28,7 +28,6 @@
 }
 
 .additional-products__list {
-	border: 1px solid #cdcdcd;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -39,6 +38,7 @@
 	}
 
 	@media #{$desktop-only} {
+		border: 1px solid #cdcdcd;
 		padding: 0;
 	}
 }

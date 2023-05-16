@@ -10,6 +10,10 @@
 	gap: 15px;
 	align-items: center;
 
+	&:active {
+		opacity: 0.3;
+	}
+
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 30px;
