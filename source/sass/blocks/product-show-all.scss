@@ -23,6 +23,10 @@
 			height: 60px;
 			margin: 52px auto 49px;
 		}
+
+		@media #{$desktop-only} {
+			margin: 52px auto 40px;
+		}
 	}
 
 	&::after {
@@ -93,5 +97,6 @@
 
 	@media #{$desktop-only} {
 		padding: 20px 39px;
+		max-width: 169px;
 	}
 }

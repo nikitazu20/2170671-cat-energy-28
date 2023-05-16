@@ -16,6 +16,10 @@
 		margin-top: 60px;
 		margin-bottom: 75px;
 	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 60px;
+	}
 }
 
 .main__page-title {
@@ -28,7 +32,7 @@
 
 	@media #{$desktop-only} {
 		margin-top: 64px;
-		margin-bottom: 56px;
+		margin-bottom: 50px;
 	}
 }
 
@@ -42,7 +46,7 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-top: 76px;
+		margin-top: 65px;
 		margin-bottom: 76px;
 	}
 }

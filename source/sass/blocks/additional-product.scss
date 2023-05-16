@@ -20,6 +20,7 @@
 	}
 
 	@media #{$desktop-only} {
+		margin: 0;
 		gap: 80px;
 	}
 }
@@ -34,6 +35,8 @@
 
 	@media #{$desktop-only} {
 		justify-content: start;
+		margin-right: 35px;
+		gap: 0;
 	}
 }
 
@@ -84,7 +87,7 @@
 	&--volume {
 		@media #{$desktop-only} {
 			min-width: 200px;
-			margin-right: 80px;
+			margin-right: 43px;
 		}
 	}
 
@@ -107,7 +110,8 @@
 	}
 
 	@media #{$desktop-only} {
-		min-width: 192px;
+		margin-left: -35px;
+		min-width: 244px;
 		padding: 10px 10px;
 		display: grid;
 		place-items: center;
