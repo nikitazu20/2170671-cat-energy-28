@@ -148,7 +148,7 @@
 			]
 		},
 		"products/chicken500": {
-			"ext": "jpg",
+			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
 				{
@@ -169,7 +169,7 @@
 			]
 		},
 		"products/chicken1000": {
-			"ext": "jpg",
+			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
 				{
@@ -190,18 +190,18 @@
 			]
 		},
 		"products/fish500": {
-			"ext": "jpg",
+			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
 				{
 					"viewport": "desktop",
-					"width": 163,
-					"height": 174
+					"width": 161,
+					"height": 172
 				},
 				{
 					"viewport": "tablet",
-					"width": 163,
-					"height": 173
+					"width": 161,
+					"height": 172
 				},
 				{
 					"viewport": "mobile",
@@ -211,7 +211,7 @@
 			]
 		},
 		"products/fish1000": {
-			"ext": "jpg",
+			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
 				{
@@ -222,7 +222,7 @@
 				{
 					"viewport": "tablet",
 					"width": 168,
-					"height": 200
+					"height": 206
 				},
 				{
 					"viewport": "mobile",
@@ -232,18 +232,18 @@
 			]
 		},
 		"products/buckwheat500": {
-			"ext": "jpg",
+			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
 				{
 					"viewport": "desktop",
 					"width": 161,
-					"height": 171
+					"height": 172
 				},
 				{
 					"viewport": "tablet",
 					"width": 161,
-					"height": 171
+					"height": 172
 				},
 				{
 					"viewport": "mobile",
@@ -253,7 +253,7 @@
 			]
 		},
 		"products/buckwheat1000": {
-			"ext": "jpg",
+			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
 				{
@@ -264,7 +264,7 @@
 				{
 					"viewport": "tablet",
 					"width": 168,
-					"height": 200
+					"height": 206
 				},
 				{
 					"viewport": "mobile",
@@ -274,18 +274,18 @@
 			]
 		},
 		"products/rice500": {
-			"ext": "jpg",
+			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
 				{
 					"viewport": "desktop",
-					"width": 163,
-					"height": 174
+					"width": 161,
+					"height": 172
 				},
 				{
 					"viewport": "tablet",
-					"width": 163,
-					"height": 174
+					"width": 161,
+					"height": 172
 				},
 				{
 					"viewport": "mobile",

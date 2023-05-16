@@ -1,4 +1,5 @@
 .product-show-all {
+	border: 2px solid #f2f2f2;
 	position: relative;
 	padding: 20px 0;
 
@@ -33,6 +34,10 @@
 		box-shadow: 100vw 0 0 #d9d9d9;
 		top: 0;
 		right: 0;
+
+		@media #{$not-mobile} {
+			display: none;
+		}
 	}
 }
 
@@ -50,7 +55,7 @@
 		font-size: 20px;
 		line-height: 22px;
 		margin: 23px auto 23px;
-		width: 180px;
+		width: 178px;
 	}
 }
 
@@ -82,6 +87,8 @@
 		padding: 20px 74px;
 		font-size: 16px;
 		line-height: 0;
+		max-width: 249px;
+		margin: 0 auto;
 	}
 
 	@media #{$desktop-only} {
