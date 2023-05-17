@@ -11,21 +11,29 @@
 	border: none;
 	cursor: pointer;
 
-	&:hover {
-		background-color: #5eaa2f;
-	}
-
-	&:active {
-		background-color: #5eaa2f;
-		color: #8ec36d;
-	}
-
 	&--primary {
 		background-color: var(--accent-color);
+
+		&:hover {
+			background-color: #5eaa2f;
+		}
+
+		&:active {
+			background-color: #5eaa2f;
+			color: #8ec36d;
+		}
 	}
 
 	&--secondary {
 		background-color: #f2f2f2;
 		color: #444444;
+
+		&:hover {
+			background-color: #ebebeb;
+		}
+
+		&:active {
+			color: #b9b9b9;
+		}
 	}
 }

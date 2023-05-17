@@ -86,9 +86,21 @@
 }
 
 .owner__wrapper {
+	position: relative;
+	--color-icon: #000000;
+	--color-icon-focus: #68b738;
 	display: flex;
 	gap: 6px;
 	align-items: center;
+
+	&:hover {
+		opacity: 0.9;
+	}
+
+	&:focus-visible {
+		outline: 2px solid #444444;
+		--color-icon: var(--color-icon-focus);
+	}
 
 	@media #{$not-mobile} {
 		gap: 20px;
@@ -110,11 +122,24 @@
 }
 
 .owner__email-input {
-	position: relative;
+	font-family: var(--accent-font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	border: 1px solid #e7e7e7;
+	min-height: 45px;
+	width: 100%;
 	padding: 14px 35px 14px 15px;
 
 	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
 		padding: 11px 35px 11px 19px;
+	}
+
+	&--status_error {
+		border: 2px solid #ff8282;
 	}
 }
 
@@ -133,45 +158,58 @@
 }
 
 .owner__tel-input {
+	font-family: var(--accent-font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	border: 1px solid #e7e7e7;
+	min-height: 45px;
+	width: 100%;
 	padding: 14px 35px 14px 15px;
 
 	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
 		padding: 11px 35px 11px 16px;
 	}
-}
 
-.owner__email-icon {
-	display: block;
-	width: 20px;
-	height: 20px;
-	mask: url("../../icons/stack.svg#email") no-repeat center;
-	background: #000000;
-	position: absolute;
-	left: 83%;
-
-	@media #{$not-mobile} {
-		left: 86%;
-	}
-
-	@media #{$desktop-only} {
-		left: 45%;
+	&--status_error {
+		border: 2px solid #ff8282;
 	}
 }
 
-.owner__tel-icon {
+.owner__icon {
+	position: absolute;
 	display: block;
 	width: 20px;
 	height: 20px;
-	mask: url("../../icons/stack.svg#tel") no-repeat center;
-	background: #000000;
-	position: absolute;
-	left: 83%;
+	z-index: 2;
+	right: 15px;
+	mask-image: var(--icon);
+	background-color: var(--icon-color, #222222);
 
-	@media #{$not-mobile} {
-		left: 86%;
+	&--tel {
+		--icon: url("../../icons/stack.svg#tel");
 	}
 
-	@media #{$desktop-only} {
-		left: 90%;
+	&--email {
+		--icon: url("../../icons/stack.svg#email");
+	}
+
+	.owner__email-input--status_error + & {
+		background-color: #ff8282;
+	}
+
+	.owner__tel-input--status_error + & {
+		background-color: #ff8282;
+	}
+
+	.owner__email-input:focus + & {
+		background-color: #68b738;
+	}
+
+	.owner__tel-input:focus + & {
+		background-color: #68b738;
 	}
 }

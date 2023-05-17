@@ -52,37 +52,32 @@
 }
 
 .page-footer__social-link {
+	--icon-fill: #666666;
+	--icon-fill-hover: #68b738;
+
+	&:hover {
+		--icon-fill: var(--icon-fill-hover);
+	}
+
 	&--social_vk {
-		&::before {
-			content: "";
-			display: block;
-			width: 28px;
-			height: 22px;
-			mask: url("../../icons/stack.svg#vk") no-repeat center;
-			background: #666666;
-		}
+		--icon: url("../../icons/stack.svg#vk");
 	}
 
 	&--social_youtube {
-		&::before {
-			content: "";
-			display: block;
-			width: 28px;
-			height: 22px;
-			mask: url("../../icons/stack.svg#youtube") no-repeat center;
-			background: #666666;
-		}
+		--icon: url("../../icons/stack.svg#youtube");
 	}
 
 	&--social_telegram {
-		&::before {
-			content: "";
-			display: block;
-			width: 28px;
-			height: 22px;
-			mask: url("../../icons/stack.svg#telegram") no-repeat center;
-			background: #666666;
-		}
+		--icon: url("../../icons/stack.svg#telegram");
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		width: 28px;
+		height: 22px;
+		mask: var(--icon) no-repeat center;
+		background: var(--icon-fill);
 	}
 }
 
@@ -94,7 +89,6 @@
 	color: #666666;
 
 	@media #{$not-mobile} {
-		gap: 28px;
 		justify-content: end;
 	}
 }
@@ -104,6 +98,7 @@
 	--icon-fill-hover: #68b738;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	position: relative;
 	color: #666666;
 	font-family: var(--main-font);
@@ -111,26 +106,42 @@
 	font-size: 16px;
 	line-height: 19px;
 	margin: 0;
-	padding: 12px 167px 12px 0;
 	text-decoration: none;
 
-	@media #{$desktop-only} {
-		padding: 12px 45px 12px 0;
+	&:hover {
+		--icon-fill: var(--icon-fill-hover);
 	}
 
-	&::before {
-		position: absolute;
+	&:active {
+		opacity: 0.3;
+		--icon-fill: var(--icon-fill-hover);
+	}
+
+	@media #{$desktop-only} {
+		justify-content: center;
+	}
+}
+
+.page-footer__academy-logo-image {
+	--icon-fill: #666666;
+	--icon-fill-hover: #68b738;
+	display: block;
+
+	&:hover {
+		--icon-fill: var(--icon-fill-hover);
+	}
+
+	&:active {
+		opacity: 0.3;
+		--icon-fill: var(--icon-fill-hover);
+	}
+
+	&::after {
 		content: "";
 		display: block;
 		width: 40px;
 		height: 40px;
 		mask: url("../../icons/stack.svg#htmlacademy") no-repeat center;
 		background: var(--icon-fill);
-		right: 0;
-		top: 5px;
-
-		&:hover {
-			background: var(--icon-fill-hover);
-		}
 	}
 }

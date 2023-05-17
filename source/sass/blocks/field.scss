@@ -8,6 +8,18 @@
 	min-height: 45px;
 	width: 100%;
 
+	&:hover {
+		border: 1px solid #cdcdcd;
+	}
+
+	&:focus-visible {
+		outline: 2px solid #444444;
+	}
+
+	&--status_error {
+		border: 2px solid #ff8282;
+	}
+
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 30px;

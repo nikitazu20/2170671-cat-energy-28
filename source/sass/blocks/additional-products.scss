@@ -21,7 +21,7 @@
 	@media #{$desktop-only} {
 		display: flex;
 		justify-content: space-between;
-		align-items: start;
+		align-items: flex-start;
 		margin-top: 58px;
 		margin-bottom: 48px;
 	}
@@ -33,12 +33,12 @@
 	padding: 0;
 
 	@media #{$not-mobile} {
-		border: 0;
+		border: 1px solid #cdcdcd;
 		padding: 15px 38px 28px;
 	}
 
 	@media #{$desktop-only} {
-		border: 1px solid #cdcdcd;
+		border: 0;
 		padding: 0;
 	}
 }

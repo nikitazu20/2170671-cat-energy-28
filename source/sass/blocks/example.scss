@@ -73,7 +73,7 @@
 .example__item {
 	display: flex;
 	flex-direction: column;
-	place-items: start;
+	place-items: flex-start;
 
 	max-width: 124px;
 
@@ -207,9 +207,7 @@
 }
 
 .example__slider {
-	@media #{$not-mobile} {
-		margin: 0 auto;
-	}
+	margin: 0 auto;
 
 	@media #{$desktop-only} {
 		margin-top: -183px;
