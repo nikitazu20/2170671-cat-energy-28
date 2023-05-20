@@ -46,47 +46,33 @@
 	}
 }
 
-.nutrition-program__wight-loss-input,
-.nutrition-program__mass-gain-input,
-.nutrition-program__advise-input {
-	display: none;
-}
-
-.nutrition-program__radio {
-	display: inline-block;
+.nutrition-program__input {
+	appearance: none;
 	width: 30px;
 	height: 30px;
 	border: 1px solid #cdcdcd;
 	border-radius: 50%;
-	position: relative;
 
 	@media #{$not-mobile} {
 		width: 40px;
 		height: 40px;
 	}
 
-	&::before {
+	&:focus::before {
 		content: "";
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
 		display: block;
+		margin-top: calc(50% - 7px);
+		margin-left: calc(50% - 7px);
 		width: 13px;
 		height: 13px;
 		border-radius: 50%;
 		background-color: #68b738;
-		opacity: 0;
 
 		@media #{$not-mobile} {
 			width: 18px;
 			height: 18px;
+			margin-top: calc(50% - 9px);
+			margin-left: calc(50% - 9px);
 		}
 	}
-}
-
-.nutrition-program__wight-loss-input:checked + .nutrition-program__radio::before,
-.nutrition-program__mass-gain-input:checked + .nutrition-program__radio::before,
-.nutrition-program__advise-input:checked + .nutrition-program__radio::before {
-	opacity: 1;
 }

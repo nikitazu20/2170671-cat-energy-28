@@ -87,44 +87,20 @@
 	}
 }
 
-.additional__sweetener-input,
-.additional__water-input,
-.additional__milk-input,
-.additional__vitamins-input {
-	display: none;
-}
-
-.additional__checkbox {
-	display: inline-block;
+.additional__input {
+	appearance: none;
 	width: 30px;
 	height: 30px;
-	position: relative;
 	border: 1px solid #cdcdcd;
+	aspect-ratio: 1;
 
-	@media #{$not-mobile} {
-		width: 40px;
-		height: 40px;
-	}
-
-	&::before {
+	&:focus::before {
 		content: "";
+		display: block;
+		margin: auto;
+		aspect-ratio: 1;
 		width: 30px;
 		height: 30px;
-		position: absolute;
-		mask: url("../../icons/stack.svg#tick") no-repeat center;
-		background: #68b738;
-		opacity: 0;
-
-		@media #{$not-mobile} {
-			width: 40px;
-			height: 40px;
-		}
+		background: url("../../icons/stack.svg#tick") no-repeat center / 30px;
 	}
-}
-
-.additional__sweetener-input:checked + .additional__checkbox::before,
-.additional__water-input:checked + .additional__checkbox::before,
-.additional__milk-input:checked + .additional__checkbox::before,
-.additional__vitamins-input:checked + .additional__checkbox::before {
-	opacity: 1;
 }
