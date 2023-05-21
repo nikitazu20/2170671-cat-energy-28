@@ -58,7 +58,7 @@
 		height: 40px;
 	}
 
-	&:focus::before {
+	&:checked::before {
 		content: "";
 		display: block;
 		margin-top: calc(50% - 7px);

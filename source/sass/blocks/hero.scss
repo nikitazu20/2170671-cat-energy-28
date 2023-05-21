@@ -6,6 +6,10 @@
 		padding: 0;
 	}
 
+	@media #{$desktop-only} {
+		position: static;
+	}
+
 	&::after {
 		@media #{$mobile-only} {
 			content: "";
@@ -21,13 +25,14 @@
 
 		@media #{$desktop-only} {
 			content: "";
+			position: absolute;
 			background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), var(--bg-image) no-repeat right;
 			background-color: #525156;
 			display: block;
 			width: 50vw;
 			height: 694px;
-			margin-left: auto;
-			margin-top: -560px;
+			left: 50vw;
+			top: 0;
 		}
 
 		@include bg-image("cat-background");
@@ -99,7 +104,7 @@
 	@media #{$desktop-only} {
 		position: absolute;
 		left: 39%;
-		top: -55px;
+		top: 165px;
 	}
 }
 

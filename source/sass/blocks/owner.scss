@@ -53,18 +53,16 @@
 	&::before {
 		content: "";
 		position: absolute;
-		left: 1px;
 		right: 0;
 		top: 15px;
 		width: 100vw;
 		height: 2px;
 		background-color: #68b738;
-		box-shadow: 100vw 0 0 #68b738;
+		box-shadow: 100vw 0 0 #68b738, -100vw 0 0 #68b738;
 		z-index: -1;
 
 		@media #{$not-mobile} {
 			top: 24px;
-			left: -1500px;
 		}
 	}
 }

@@ -12,6 +12,7 @@
 }
 
 .weight-loss__title {
+	max-width: 300px;
 	display: flex;
 	margin: -6px 0 18px;
 	align-items: center;
@@ -49,7 +50,7 @@
 			width: 272px;
 			height: 272px;
 			position: absolute;
-			right: -6%;
+			left: 365px;
 			top: -13px;
 		}
 
@@ -68,6 +69,7 @@
 
 	@media #{$tablet-only} {
 		font-size: 16px;
+		max-width: 450px;
 		line-height: 24px;
 		width: 58%;
 		margin: 24px 0 24px;

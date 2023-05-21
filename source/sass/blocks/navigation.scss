@@ -65,7 +65,9 @@
 	}
 
 	&[aria-current="page"] {
-		border-bottom: 2px solid #68b738;
+		@media #{$not-mobile} {
+			border-bottom: 2px solid #68b738;
+		}
 	}
 }
 
@@ -157,7 +159,12 @@
 	@media #{$not-mobile} {
 		flex-direction: row;
 		align-items: center;
+		flex-wrap: wrap;
 		margin: 0;
 		gap: 35px;
+	}
+
+	@media #{$desktop-only} {
+		max-width: 550px;
 	}
 }
