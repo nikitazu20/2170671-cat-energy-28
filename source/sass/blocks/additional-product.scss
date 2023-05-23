@@ -48,6 +48,7 @@
 	line-height: 16px;
 	text-transform: uppercase;
 	margin: 0;
+	margin-bottom: 14px;
 	padding: 0;
 
 	@media #{$not-mobile} {
@@ -104,6 +105,7 @@
 	font-size: 16px;
 	line-height: 20px;
 	padding: 10px 109px;
+	margin-top: 14px;
 
 	@media #{$desktop-only} {
 		margin-left: auto;

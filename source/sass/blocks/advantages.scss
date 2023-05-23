@@ -25,6 +25,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	counter-reset: number 0;
 
 	@media #{$tablet-only} {
 		flex-direction: row;
@@ -34,8 +35,9 @@
 	}
 
 	@media #{$desktop-only} {
+		flex-wrap: wrap;
 		flex-direction: row;
-		gap: 74px;
+		justify-content: space-between;
 	}
 }
 
@@ -45,63 +47,23 @@
 	gap: 20px;
 
 	@media #{$not-mobile} {
+		max-width: 232px;
 		flex-direction: column;
+		position: relative;
 		font-size: 16px;
 		line-height: 24px;
 		gap: 31px;
 		padding: 0 0 97px;
 		align-items: start;
-
-		&--number_one {
-			width: 230px;
-			background-image: url("../../icons/stack.svg#one");
-			background-size: 70px 227px;
-			background-repeat: no-repeat;
-			background-position: top 0 right 34px;
-		}
-
-		&--number_two {
-			width: 246px;
-			background-image: url("../../icons/stack.svg#two");
-			background-size: 113px 225px;
-			background-repeat: no-repeat;
-			background-position: top 0 right 10px;
-		}
-
-		&--number_three {
-			width: 247px;
-			background-image: url("../../icons/stack.svg#three");
-			background-size: 109px 227px;
-			background-repeat: no-repeat;
-			background-position: top 0 right 12px;
-		}
-
-		&--number_four {
-			margin-left: -14px;
-			width: 249px;
-			background-image: url("../../icons/stack.svg#four");
-			background-size: 121px 227px;
-			background-repeat: no-repeat;
-			background-position: top 0 right 2px;
-		}
+		counter-increment: number;
 	}
 
 	@media #{$desktop-only} {
-		width: 252px;
+		max-width: 245px;
 		font-size: 16px;
 		line-height: 24px;
 		flex-direction: column;
 		gap: 31px;
-
-		&--number_one {
-			background-position: top 0 right 50px;
-		}
-
-		&--number_four {
-			max-width: 250px;
-			margin-left: -3px;
-			padding: 0 3px;
-		}
 	}
 
 	&--icon_leaf {
@@ -137,6 +99,23 @@
 			min-width: 80px;
 			height: 80px;
 			align-self: start;
+		}
+	}
+
+	&::after {
+		@media #{$not-mobile} {
+			position: absolute;
+			top: -39px;
+			right: 0;
+			content: counter(number);
+			display: block;
+			color: #f2f2f2;
+			z-index: -1;
+			font-family: var(--accent-font);
+			font-style: normal;
+			font-weight: 400;
+			font-size: 280px;
+			line-height: 280px;
 		}
 	}
 }
