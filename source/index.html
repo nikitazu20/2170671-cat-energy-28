@@ -3,6 +3,13 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
+
+<!-- ⚠️ Проверяющему ⚠️ -->
+
+<!-- 🔷 Валидация и проверка БЭМ-классов включены в `npm run lint` 🔷 -->
+
+<!-- 🔷 Webp генерируется в прод-сборке. Проверить — `npm run preview` 🔷 -->
+
 <main class="main">
 	<h1 class="visually-hidden">
 		Кэт Энерджи - программы питания для котов
@@ -80,7 +87,7 @@
 	<section class="example">
 		<div class="page__centerer">
 			<h2 class="example__title index-title">
-					Живой пример
+				Живой пример
 			</h2>
 			<div class="example__container">
 				<div class="example__wrapper">
@@ -92,23 +99,23 @@
 					<dl class="example__list">
 						<div class="example__item">
 							<dt class="example__item-description">
-									Снижение веса
+								Снижение веса
 							</dt>
 							<dd class="example__number">
-									5&nbsp;Кг
+								5&nbsp;Кг
 							</dd>
 						</div>
 						<div class="example__item example__item--days">
 							<dt class="example__item-description example__item-description--days">
-									Затрачено времени
+								Затрачено времени
 							</dt>
 							<dd class="example__number example__number--days">
-									60&nbsp;дней
+								60&nbsp;дней
 							</dd>
 						</div>
 						<div class="example__item example__item--price">
 							<dt class="example__item-description example__item-description--price">
-									Затраты на питание: &#32;
+								Затраты на питание: &#32;
 							</dt>
 							<dd class="example__number example__number--price">
 								&#32;15&nbsp;000&nbsp;РУБ.
@@ -118,13 +125,13 @@
 				</div>
 				<div class="example__slider slider">
 					<div class="slider" style="--curtain-place: 0.5;">
-							{% include "./templates/picture.twig" with {name: "cat-before", class: "example__image slider__image slider__image--state_before", alt: "Толстый кот"} %}
-							<div class="slider__curtain">
-								<button class="slider__thumb" type="button">
-									<span class="visually-hidden">Ползунок слайдера</span>
-								</button>
-							</div>
-							{% include "./templates/picture.twig" with {name: "cat-after", class: "example__image slider__image slider__image--state_after", alt: "Худой кот"} %}
+						{% include "./templates/picture.twig" with {name: "cat-before", class: "example__image slider__image slider__image--state_before", alt: "Толстый кот"} %}
+						<div class="slider__curtain">
+							<button class="slider__thumb" type="button">
+								<span class="visually-hidden">Ползунок слайдера</span>
+							</button>
+						</div>
+						{% include "./templates/picture.twig" with {name: "cat-after", class: "example__image slider__image slider__image--state_after", alt: "Худой кот"} %}
 					</div>
 				</div>
 			</div>

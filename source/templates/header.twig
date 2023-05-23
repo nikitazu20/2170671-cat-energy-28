@@ -1,5 +1,5 @@
 <header class=" page__centerer page-header">
-	<a class="page-header__logo" href="./" {% if permalink == "./" %} aria-current="page" {% endif %}>
+	<a class="page-header__logo" href="./" {% if permalink=="./" %} aria-current="page" {% endif %}>
 		<picture>
 			<source media="(min-width: 1280px)" srcset="./img/logo.svg#img-desktop" width="71" height="59">
 			<source media="(min-width: 768px)" srcset="./img/logo.svg#img-tablet" width="61" height="50">
@@ -20,11 +20,11 @@
 		<div class="navigation__container">
 			<ul class="navigation__list">
 				{% for page in pages %}
-					<li class="navigation__item">
-						<a class="navigation__link" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page" {% endif %}>
-							{{ page.name }}
-						</a>
-					</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="{{ page.path }}" {% if permalink==page.path %} aria-current="page" {% endif %}>
+						{{ page.name }}
+					</a>
+				</li>
 				{% endfor %}
 			</ul>
 		</div>

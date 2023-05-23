@@ -42,27 +42,6 @@
 				}
 			]
 		},
-		"test": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 1280,
-					"height": 1280
-				},
-				{
-					"viewport": "tablet",
-					"width": 640,
-					"height": 640
-				},
-				{
-					"viewport": "mobile",
-					"width": 320,
-					"height": 320
-				}
-			]
-		},
 		"cat-background": {
 			"ext": "jpg",
 			"maxdppx": 2,

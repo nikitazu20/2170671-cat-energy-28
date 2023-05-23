@@ -3,12 +3,19 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
+
+<!-- ⚠️ Проверяющему ⚠️ -->
+
+<!-- 🔷 Валидация и проверка БЭМ-классов включены в `npm run lint` 🔷 -->
+
+<!-- 🔷 Webp генерируется в прод-сборке. Проверить — `npm run preview` 🔷 -->
+
 <main class="main">
-		<div class="page__centerer">
-			<h1 class="main__title page-title">
+	<div class="page__centerer">
+		<h1 class="main__title page-title">
 			Каталог продукции
-			</h1>
-		</div>
+		</h1>
+	</div>
 	<section class="page__centerer main__products products">
 		<h2 class="visually-hidden">
 			Карточки товаров
@@ -241,7 +248,7 @@
 					Cat Energy slim 500 г
 				</h3>
 				<div class="product__image-wrapper">
-				{% include "./templates/picture.twig" with {name: "products/rice500", class: "product__image", alt: "Cat Energy slim 500 г со вкусом риса."} %}
+					{% include "./templates/picture.twig" with {name: "products/rice500", class: "product__image", alt: "Cat Energy slim 500 г со вкусом риса."} %}
 				</div>
 				<dl class="product__characteristics">
 					<div class="product__characteristics-wrapper">
@@ -322,7 +329,7 @@
 							Питьевая вода
 						</h3>
 						<dl class="additional-product__characteristics">
-								<dt class="visually-hidden">
+							<dt class="visually-hidden">
 								Объем
 							</dt>
 							<dd class="additional-product__value additional-product__value--volume">

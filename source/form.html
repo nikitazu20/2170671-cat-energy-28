@@ -3,9 +3,16 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
+
+<!-- ⚠️ Проверяющему ⚠️ -->
+
+<!-- 🔷 Валидация и проверка БЭМ-классов включены в `npm run lint` 🔷 -->
+
+<!-- 🔷 Webp генерируется в прод-сборке. Проверить — `npm run preview` 🔷 -->
+
 <main class="main">
 	<div class="main__container">
-	<div class="page__centerer">
+		<div class="page__centerer">
 			<h1 class="main__page-title page-title">
 				Подбор программы
 			</h1>
@@ -16,7 +23,7 @@
 					Заполните анкету, и мы подберем<br>программу питания для вашего кота
 				</h2>
 				<div class="form__container">
-				<fieldset class="form__cat-information cat-information">
+					<fieldset class="form__cat-information cat-information">
 						<legend class="visually-hidden">
 							Заполните имя, вес и возраст домашнего питомца
 						</legend>
@@ -45,7 +52,7 @@
 						</legend>
 						<ul class="nutrition-program__list">
 							<li class="nutrition-program__item">
-								<input class="nutrition-program__input nutrition-program__wight-loss-input" type="radio" id="weight-loss" name="nutrition-program" value="weight-loss"checked>
+								<input class="nutrition-program__input nutrition-program__wight-loss-input" type="radio" id="weight-loss" name="nutrition-program" value="weight-loss" checked>
 								<label class="nutrition-program__weight-loss nutrition-program-label" for="weight-loss">
 									Похудение
 								</label>
