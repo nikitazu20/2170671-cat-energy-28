@@ -11,10 +11,10 @@
 }
 
 .advantages__title {
-	margin: 20px 0 40px;
+	margin: 17px 0 40px;
 
 	@media #{$not-mobile} {
-		margin: 50px 0 75px;
+		margin: 50px 0 72px;
 	}
 }
 
@@ -30,7 +30,7 @@
 	@media #{$tablet-only} {
 		flex-direction: row;
 		flex-wrap: wrap;
-		column-gap: 153px;
+		column-gap: 134px;
 		row-gap: 37px;
 	}
 
@@ -44,7 +44,7 @@
 .advantages__item {
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 22px;
 
 	@media #{$not-mobile} {
 		max-width: 232px;
@@ -59,11 +59,35 @@
 	}
 
 	@media #{$desktop-only} {
-		max-width: 245px;
 		font-size: 16px;
 		line-height: 24px;
 		flex-direction: column;
 		gap: 31px;
+	}
+
+	&--number_one {
+		@media #{$not-mobile} {
+			max-width: 230px;
+		}
+	}
+
+	&--number_two {
+		@media #{$not-mobile} {
+			max-width: 246px;
+			margin-left: 21px;
+		}
+	}
+
+	&--number_three {
+		@media #{$not-mobile} {
+			max-width: 248px;
+		}
+	}
+
+	&--number_four {
+		@media #{$not-mobile} {
+			max-width: 250px;
+		}
 	}
 
 	&--icon_leaf {

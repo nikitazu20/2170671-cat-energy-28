@@ -1,5 +1,5 @@
 .programs__container {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	display: flex;
 	gap: 20px;
 	flex-direction: column;
@@ -10,7 +10,7 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-bottom: 71px;
+		margin-bottom: 74px;
 		margin-top: 268px;
 	}
 

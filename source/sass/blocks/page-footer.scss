@@ -89,7 +89,6 @@
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
-	// width: 100%;
 	padding: 15px 0 20px;
 	color: #666666;
 	font-family: var(--main-font);
@@ -101,10 +100,16 @@
 
 	@media #{$not-mobile} {
 		justify-self: end;
+		gap: 22px;
+		margin-right: -6px;
+		margin-top: 2px;
 	}
 
 	@media #{$desktop-only} {
 		justify-content: center;
+		gap: 22px;
+		margin-right: -6px;
+		margin-top: 2px;
 	}
 
 	&:hover {

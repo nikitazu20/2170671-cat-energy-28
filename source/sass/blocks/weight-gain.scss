@@ -12,7 +12,6 @@
 }
 
 .weight-gain__title {
-	max-width: 300px;
 	display: flex;
 	gap: 9px;
 	margin: -10px 0 0;
@@ -25,6 +24,7 @@
 	color: #000000;
 
 	@media #{$tablet-only} {
+		max-width: 300px;
 		position: relative;
 		font-size: 36px;
 		line-height: 36px;
@@ -34,7 +34,7 @@
 	@media #{$desktop-only} {
 		font-size: 36px;
 		line-height: 36px;
-		margin: -27px 0 26px;
+		margin: -24px 0 22px;
 		gap: 44px;
 	}
 
@@ -86,6 +86,6 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-top: 25px;
+		margin-top: 28px;
 	}
 }

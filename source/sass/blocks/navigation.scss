@@ -32,13 +32,14 @@
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 24px;
-		padding: 18px 0 12px;
+		padding: 18px 0 8px;
 	}
 
 	@media #{$desktop-only} {
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 30px;
+		padding: 16px 0 5px;
 
 		&:hover {
 			opacity: 0.6;
@@ -80,6 +81,7 @@
 .navigation--closed .navigation__toggle::before {
 	content: "";
 	display: block;
+	margin-top: 6px;
 	width: 24px;
 	height: 24px;
 	mask: url("../../icons/stack.svg#burger") no-repeat center;

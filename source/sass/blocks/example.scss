@@ -169,6 +169,7 @@
 	text-transform: lowercase;
 	margin-top: -17px;
 	background-color: #eaeaea;
+	max-width: 87px;
 	padding: 0 17px;
 
 	@media #{$not-mobile} {
@@ -196,6 +197,10 @@
 		color: #000000;
 		margin: 0;
 		padding: 0;
+
+		@media #{$mobile-only} {
+			max-width: 188px;
+		}
 
 		@media #{$not-mobile} {
 			font-weight: 400;
