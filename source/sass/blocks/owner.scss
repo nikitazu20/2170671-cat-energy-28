@@ -13,18 +13,18 @@
 .owner__title {
 	position: relative;
 	width: 204px;
-	margin: 24px -3px 34px;
+	margin: 0 -3px 34px;
 	background-color: #ffffff;
 
 
 	@media #{$not-mobile} {
 		width: 558px;
-		margin-top: 65px;
-		margin-bottom: 65px;
+		margin-top: 0;
+		margin-bottom: 76px;
 	}
 
 	@media #{$desktop-only} {
-		margin-top: 67px;
+		margin-top: 3px;
 		margin-bottom: 77px;
 	}
 

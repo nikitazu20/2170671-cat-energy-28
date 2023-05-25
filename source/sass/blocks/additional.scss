@@ -5,17 +5,17 @@
 
 .additional__title {
 	background-color: #ffffff;
-	margin: 23px 0 34px;
+	margin: 0 0 34px;
 	width: 164px;
 	position: relative;
 
 	@media #{$not-mobile} {
 		width: 253px;
-		margin: 65px 0 57px;
+		margin: 0 0 57px;
 	}
 
 	@media #{$desktop-only} {
-		margin: 67px 0 57px;
+		margin: 0 0 57px;
 	}
 
 	&::before {
@@ -86,11 +86,17 @@
 }
 
 .additional__input {
+	margin: 0;
 	appearance: none;
 	width: 30px;
 	height: 30px;
 	border: 1px solid #cdcdcd;
 	aspect-ratio: 1;
+
+	@media #{$not-mobile} {
+		width: 40px;
+		height: 40px;
+	}
 
 	&:checked::before {
 		content: "";
@@ -100,5 +106,10 @@
 		width: 30px;
 		height: 30px;
 		background: url("../../icons/stack.svg#tick") no-repeat center / 30px;
+
+		@media #{$not-mobile} {
+			width: 40px;
+			height: 40px;
+		}
 	}
 }

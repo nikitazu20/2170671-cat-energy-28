@@ -54,6 +54,7 @@
 	margin-left: auto;
 
 	@media #{$not-mobile} {
+		margin-top: -7px;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 20px;

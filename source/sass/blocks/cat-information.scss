@@ -2,9 +2,9 @@
 	position: relative;
 	border: 0;
 	display: flex;
-	padding: 0 0 22px;
+	padding: 3px 0 25px;
 	flex-direction: column;
-	gap: 14px;
+	gap: 13px;
 
 	@media #{$not-mobile} {
 		gap: 20px;
@@ -36,6 +36,7 @@
 }
 
 .cat-information__cat-name-input {
+	min-height: 45px;
 	padding: 11px 19px;
 
 	@media #{$desktop-only} {
@@ -44,9 +45,11 @@
 }
 
 .cat-information__cat-weight-input {
+	min-height: 45px;
 	padding: 10px 19px;
 }
 
 .cat-information__cat-age-input {
+	min-height: 45px;
 	padding: 11px 19px;
 }
