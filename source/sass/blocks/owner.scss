@@ -21,33 +21,11 @@
 		width: 558px;
 		margin-top: 65px;
 		margin-bottom: 65px;
-
-		&::after {
-			content: "";
-			position: absolute;
-			display: block;
-			background-color: #ffffff;
-			width: 33px;
-			height: 40px;
-			left: -36px;
-			top: 0;
-		}
 	}
 
 	@media #{$desktop-only} {
 		margin-top: 67px;
 		margin-bottom: 77px;
-
-		&::after {
-			content: "";
-			position: absolute;
-			display: block;
-			background-color: #ffffff;
-			width: 35px;
-			height: 40px;
-			left: -36px;
-			top: 0;
-		}
 	}
 
 	&::before {
@@ -58,11 +36,26 @@
 		width: 100vw;
 		height: 2px;
 		background-color: #68b738;
-		box-shadow: 100vw 0 0 #68b738, -100vw 0 0 #68b738;
+		box-shadow: 100vw 0 0 #68b738;
 		z-index: -1;
 
 		@media #{$not-mobile} {
 			top: 24px;
+		}
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+		background-color: #ffffff;
+		width: 33px;
+		height: 40px;
+		left: -32px;
+		top: 0;
+
+		@media #{$not-mobile} {
+			left: -33px;
 		}
 	}
 }

@@ -12,34 +12,33 @@
 		line-height: 16px;
 		margin-top: 65px;
 		margin-bottom: 76px;
-
-		&::after {
-			content: "";
-			position: absolute;
-			display: block;
-			background-color: #ffffff;
-			width: 38px;
-			height: 40px;
-			left: -38px;
-			top: 0;
-		}
 	}
 
 	&::before {
 		content: "";
 		position: absolute;
-		left: 1px;
 		right: 0;
 		top: 13px;
 		width: 100vw;
 		height: 2px;
 		background-color: #68b738;
-		box-shadow: 100vw 0 0 #68b738, -100vw 0 0 #68b738;
+		box-shadow: 100vw 0 0 #68b738;
 		z-index: -1;
 
 		@media #{$not-mobile} {
 			top: 21px;
 		}
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+		background-color: #ffffff;
+		width: 38px;
+		height: 40px;
+		left: -38px;
+		top: 0;
 	}
 }
 
