@@ -10,7 +10,7 @@
 	}
 
 	@media #{$desktop-only} {
-		gap: 38px 80px;
+		gap: 44px 80px;
 		grid-template-columns: repeat(4, 1fr);
 	}
 }

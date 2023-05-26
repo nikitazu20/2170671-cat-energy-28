@@ -64,7 +64,7 @@
 	@media #{$desktop-only} {
 		width: 374px;
 		margin-top: 76px;
-		margin-bottom: 103px;
+		margin-bottom: 90px;
 		padding: 0;
 	}
 
@@ -76,7 +76,7 @@
 		width: 100vw;
 		height: 2px;
 		background-color: #68b738;
-		box-shadow: 100vw 0 0 #68b738, -100vw 0 0 #68b738;
+		box-shadow: 100vw 0 0 #68b738;
 		z-index: -1;
 
 		@media #{$not-mobile} {

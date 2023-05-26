@@ -43,6 +43,7 @@
 }
 
 .comment__text {
+	height: 150px;
 	padding: 8px 14px 13px;
 
 	@media #{$not-mobile} {

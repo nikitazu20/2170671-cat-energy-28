@@ -4,7 +4,7 @@
 	padding: 0 0 18px;
 
 	@media #{$not-mobile} {
-		padding: 25px 28px;
+		padding: 21px 28px;
 		border: 1px solid #e7e7e7;
 	}
 
@@ -42,7 +42,7 @@
 
 .nutrition-program__item {
 	display: flex;
-	gap: 15px;
+	gap: 20px;
 	align-items: center;
 
 	@media #{$desktop-only} {

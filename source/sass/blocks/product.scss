@@ -90,6 +90,10 @@
 		align-self: center;
 	}
 
+	@media #{$desktop-only} {
+		margin-bottom: 32px;
+	}
+
 	&--size_big {
 		@media #{$not-mobile} {
 			margin-bottom: 24px;

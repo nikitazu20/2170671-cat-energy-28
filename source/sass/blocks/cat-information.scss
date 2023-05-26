@@ -4,7 +4,7 @@
 	display: flex;
 	padding: 3px 0 25px;
 	flex-direction: column;
-	gap: 13px;
+	gap: 18px;
 
 	@media #{$not-mobile} {
 		gap: 20px;
@@ -36,8 +36,11 @@
 }
 
 .cat-information__cat-name-input {
-	min-height: 45px;
-	padding: 11px 19px;
+	padding: 8px 19px;
+
+	@media #{$not-mobile} {
+		padding: 10px 19px;
+	}
 
 	@media #{$desktop-only} {
 		padding: 10px 19px;
@@ -45,11 +48,17 @@
 }
 
 .cat-information__cat-weight-input {
-	min-height: 45px;
-	padding: 10px 19px;
+	padding: 8px 19px;
+
+	@media #{$not-mobile} {
+		padding: 10px 19px;
+	}
 }
 
 .cat-information__cat-age-input {
-	min-height: 45px;
-	padding: 11px 19px;
+	padding: 8px 19px;
+
+	@media #{$not-mobile} {
+		padding: 10px 19px;
+	}
 }

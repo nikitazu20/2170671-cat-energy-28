@@ -13,6 +13,7 @@
 
 .additional-product__wrapper {
 	@media #{$not-mobile} {
+		min-height: 42px;
 		margin-bottom: 13px;
 		display: flex;
 		justify-content: space-between;
@@ -54,6 +55,7 @@
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 20px;
+		margin: 0;
 	}
 
 	@media #{$desktop-only} {
