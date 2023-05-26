@@ -23,6 +23,7 @@
 	}
 
 	@media #{$desktop-only} {
+		pointer-events: initial;
 		width: 565px;
 		min-height: 198px;
 		padding: 56px 79px;
@@ -81,6 +82,7 @@
 	}
 
 	@media #{$desktop-only} {
+		pointer-events: initial;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-column: 1 / -1;
@@ -90,6 +92,7 @@
 
 .address__img-wrapper {
 	@media #{$desktop-only} {
+		pointer-events: initial;
 		grid-column: 1 / -1;
 		grid-row: 1 / -1;
 		height: 100%;
@@ -102,6 +105,7 @@
 	z-index: 1;
 
 	@media #{$desktop-only} {
+		pointer-events: initial;
 		grid-column: 1 / -1;
 		grid-row: 1 / -1;
 		height: 100%;
@@ -115,6 +119,7 @@
 	display: block;
 
 	@media #{$desktop-only} {
+		pointer-events: initial;
 		height: 100%;
 		grid-column: 1 / -1;
 		grid-row: 1 / -1;
